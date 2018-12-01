@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Three</title>
+         <link rel="stylesheet" href="style.css">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    </head>
+        <body>
+            <section class="sect-up">
+                <div class="container">
+                  <div class="content-left">
+                      <a href="..\index.html">
+                        <div class="logo">Map</div>
+                    </a>
+                  </div>
+                    <div class="content-right">
+                     <div class="menu">
+                         <!--popup -->
+    <li class="category">
+            <a href="#modalWindow" class="button">category</a>
+               <div id="modalWindow">
+                 <div class="window">
+                     <a href="..\category\index.html"><div class="one-category">category</div></a>
+
+                      <a href="..\category2\index.html"><div class="one-category">category</div></a>
+                      <a href="..\category3\index.html"><div class="one-category">category</div></a><br>
+                      <a href="..\category4\index.html"><div class="one-category">category</div></a>
+                      <a href="..\category5\index.html"><div class="one-category">category</div></a>
+                      <a href="..\category6\index.html"><div class="one-category">category</div></a><br>
+                      <a href="..\category7\index.html"><div class="one-category">category</div></a>
+                      <a href="..\category8\index.html"><div class="one-category">category</div></a>
+                      <a href="..\category9\index.html"><div class="one-category">category</div></a>
+                            </div>
+                            <a href="#close" class="closed">X</a>
+                        </div>
+                    </li>
+
+                    <!-- -->
+                <li class="blog"><a href="./about/index.html">about</a></li>
+                <li><a href="../contacts/index.html">contact</a></li>
+            </div>
+        <!-- Доделать Pupup -->
+                <span onclick="openWin();">subscribe</span>
+
+        <div class="modal">
+           <h1>He seemed denote except as oppose do spring my!</h1>
+             <input type="text"></input><br>
+          <div class="button">fdfd</div>
+               </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+                var modal = document.querySelector('.modal');
+                var overflow = document.createElement('div');
+                function openWin() {
+                overflow.className = "overflow";
+                document.body.appendChild(overflow);
+                var height = modal.offsetHeight;
+                modal.style.marginTop = - height / 4 + "px";
+                modal.style.top = "176px";
+        }
+
+        if (!Element.prototype.remove) {
+                Element.prototype.remove = function remove() {
+                        if (this.parentNode) {
+                                this.parentNode.removeChild(this);
+                        }
+                };
+        }
+
+        overflow.onclick = function () {
+            modal.style.top = "-100%";
+            overflow.remove();
+        }
+                </script>
+
+        <!-- ================================================================================== -->
+
+<div class="container-two">
+    <!--m_PageScroll2id - может быть любое название -->
+    <a rel='m_PageScroll2id' href="#box" onclick="openbox('box'); return false">
+        <i class="fas-fa-bars"></i>
+    </a>
+    <div id="box">
+     <a href="#"><div class="categories">categories</div></a>
+     <a href="../about/index.html"><div class="about">about</div></a>
+     <a href="#"><div class="contacts">contacts</div></a>
+    </div>
+</div>
+
+<script type="text/javascript">
+function openbox(box){
+  display = document.getElementById(box).style.display;
+  if(display=='none'){
+        document.getElementById(box).style.display='block';
+  }else{
+        document.getElementById(box).style.display='none';
+  }
+}
+   </script>
+</section>
+
+<!-- заголовок -->
+ <div class="title">category</div>
+<!-- -->
+
+<div class="mesh">
+    <div class="range">
+      <a href="#">
+        <div class="code">
+            <div class="category">category</div>
+            <div class="inscription">
+                <div class="date">21, 2016</div>
+                <div class="name">21, 201621, 201621, 2016</div>
+            </div>
+        </div>
+    </a>
+    <a href="#">
+        <div class="code">
+            <div class="category">category</div>
+            <div class="inscription">
+                <div class="date">21, 2016</div>
+                <div class="name">21, 201621, 201621, 2016</div>
+            </div>
+        </div>
+    </a>
+    <a href="#">
+        <div class="code">
+            <div class="category">category</div>
+            <div class="inscription">
+                <div class="date">21, 2016</div>
+                <div class="name">21, 201621, 201621, 2016</div>
+            </div>
+        </div>
+    </a>
+    </div>
+
+
+    <div class="range">
+      <a href="#">
+        <div class="code">
+            <div class="category">category</div>
+            <div class="inscription">
+                <div class="date">21, 2016</div>
+                <div class="name">21, 201621, 201621, 2016</div>
+            </div>
+        </div>
+    </a>
+    <a href="#">
+        <div class="code">
+            <div class="category">category</div>
+            <div class="inscription">
+                <div class="date">21, 2016</div>
+                <div class="name">21, 201621, 201621, 2016</div>
+            </div>
+        </div>
+    </a>
+    <a href="#">
+        <div class="code">
+            <div class="category">category</div>
+            <div class="inscription">
+                <div class="date">21, 2016</div>
+                <div class="name">21, 201621, 201621, 2016</div>
+            </div>
+        </div>
+    </a>
+    </div>
+
+
+    <div class="range">
+      <a href="#">
+        <div class="code">
+            <div class="category">category</div>
+            <div class="inscription">
+                <div class="date">21, 2016</div>
+                <div class="name">21, 201621, 201621, 2016</div>
+            </div>
+        </div>
+    </a>
+    <a href="#">
+        <div class="code">
+            <div class="category">category</div>
+            <div class="inscription">
+                <div class="date">21, 2016</div>
+                <div class="name">21, 201621, 201621, 2016</div>
+            </div>
+        </div>
+    </a>
+    <a href="#">
+        <div class="code">
+            <div class="category">category</div>
+            <div class="inscription">
+                <div class="date">21, 2016</div>
+                <div class="name">21, 201621, 201621, 2016</div>
+            </div>
+        </div>
+    </a>
+    </div>
+</div>
+
+<div class="load">load more</div>
+
+<hr>
+
+    <div class="footer-info">
+        <div class="about-info">
+            <h2>About</h2>
+        <div class="txt">
+            fdfds;flsfs;lfs'f;sf;sf<br>
+            fdfds;flsfs;lfs'f;sf;sf<br>
+            fdfds;flsfs;lfs'f;sf;sf<br>
+            fdfds;flsfs;lfs'f;sf;sf<br>
+            fdfds;flsfs;lfs'f;sf;sf<br>
+            fdfds;flsfs;lfs'f;sf;sf<br>
+            fdfds;flsfs;lfs'f;sf;sf<br>
+            fdfds;flsfs;lfs'f;sf;sf<br>
+            fdfds;flsfs;lfs'f;sf;sf<br>
+            fdfds;flsfs;lfs'f;sf;sf<br>
+        </div>
+
+    <div class="btn"><a href="#">facebook</a></div>
+    <div class="btn"><a href="#">facebook</a></div>
+    <div class="btn"><a href="#">facebook</a></div>
+    <div class="btn"><a href="#">facebook</a></div>
+        </div>
+        <div class="latest-post">
+            <h2>latest-post</h2>
+            <div class="links">
+             <a href="#">
+                <div class="link">
+                    <div class="inscription">
+                        jfdksjfskfgfl;gd;gldlg;<br>
+                        dfdlfkss;fl;ls;lfs<br>
+                        fldkfd;lff;lf<br>
+                    </div>
+                </div>
+            </a>
+             <a href="#">
+                <div class="link">
+                    <div class="inscription">
+                        jfdksjfskfgfl;gd;gldlg;<br>
+                        dfdlfkss;fl;ls;lfs<br>
+                        fldkfd;lff;lf<br>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="link">
+                    <div class="inscription">
+                        jfdksjfskfgfl;gd;gldlg;<br>
+                        dfdlfkss;fl;ls;lfs<br>
+                        fldkfd;lff;lf<br>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="link">
+                    <div class="inscription">
+                        jfdksjfskfgfl;gd;gldlg;<br>
+                        dfdlfkss;fl;ls;lfs<br>
+                        fldkfd;lff;lf<br>
+                    </div>
+                </div>
+            </a>
+            </div>
+        </div>
+
+        <div class="instagram">
+            <h2>instagram</h2>
+            <div class="container-img">
+                <div class="img"></div><div class="img"></div><div class="img"></div><div class="img"></div><div class="img"></div><div class="img"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="footer-down">
+      <div class="contact">
+      <div class="footer">
+        <div class="footer-container">
+            <div class="copyright">copyrighting &#169; KARTA 2016</div>
+                 <div class="designer">designed BY ///AGILO</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    </body>
+</html>
+<!-- -->

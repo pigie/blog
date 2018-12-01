@@ -1,0 +1,1659 @@
+body {
+    margin: 0;
+    font-size: 16px;
+    width: 100%;
+}
+
+/*Не зыбывать про звездочку*/
+* {
+    box-sizing: border-box;
+}
+
+section {
+    width: 100%;
+    padding: 20px;
+}
+
+.container {
+    width: auto;
+    max-width: 1303px;
+    margin: 0 auto;
+}
+
+/*Popup*/ /* 1 окно*/
+.open {
+    cursor: pointer
+}
+.modal {
+    position: absolute;
+    margin-left: -250px;
+    left: 50%;
+    top: -100%;
+    padding: 20px;
+    border: 1px solid #333;
+    z-index: 9999;
+    transition: all 0.5s ease-in;
+    background: #fff;
+}
+.overflow {
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+    background:#000;
+    position: absolute;
+    top: 118px;
+}
+/**/
+.container-two {
+    display: none;
+}
+
+/*меню*/
+@media screen and (max-width:960px) {
+    .container {
+        display: none;
+    }
+    .container-two {
+        display: block;
+    }
+}
+
+.container > .content-left {
+    display: inline-block;
+    font-size: 50px;
+}
+
+.container > .content-left > .logo {
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.container > .content-right {
+    text-align: right;
+    display: inline-block;
+    float: right;
+    margin-top: 9px;
+}
+
+ .menu {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 15px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 62px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.menu li a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+/*==================== modal subscribe ==========================*/
+
+.button {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+span {
+    cursor: pointer;
+    display: inline-block;
+    border:2px solid #000;
+    padding: 13px 16px 12px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+span:hover {
+    cursor: pointer;
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    border:2px solid #000;
+    padding: 13px 16px 12px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+@media screen and (max-width:1400px) {
+    .cont {
+        display: none;
+    }
+    .cont-ad {
+        display: block;
+        margin: 0 auto;
+        max-width: 649px;
+        text-align: center;
+    }
+
+    .contf > a .category {
+        background: #fff;
+        padding: 13px 27px;
+        position: absolute;
+        margin-top: -88px;
+        color: #000;
+        font-size: 17px;
+    }
+    .contf a > span {
+        font-size: 18.5px;
+        margin-top: -96px;
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        background: #000;
+        padding: 39.4px 47px 43.8px 43px;
+        border: none;
+    }
+    .contf a > span:hover {
+       background: #000000a1;
+       border: none;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .contf > a .category {
+        background: #fff;
+        margin-top: -86px;
+    }
+}
+
+@media screen and (max-width:707px) {
+    .contf > a .hello  {
+        padding:28.2px 137px 24.2px 48.4px;
+    }
+    .contf > a .category {
+        padding: 8px 20px;
+        margin-top: -87.5px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .contf > a .hello  {
+        padding:28.2px 25px 24.2px 48.4px;
+    }
+    .contf > a .category {
+        padding: 8.5px 20px;
+        margin-top:-88.5px;
+        font-size: 16px;
+        background:#fff;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .contf > a .hello  {
+        padding:27px 43px 24.2px 21.4px;
+    }
+    .contf > a .category {
+        padding: 8px 20px;
+        margin-top:-86px;
+        font-size: 16px;
+        background:#fff;
+    }
+}
+
+/*================== ================================*/
+
+.container-about {
+    padding-top: 48px;
+}
+
+.container-about > .container {
+    background: #fff;
+    width: 750px;
+    height: 560px;
+}
+
+.container > .content {
+    height: 560px;
+}
+
+.container > .content > .title {
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 38px 95px 31px 100px;
+}
+
+.container > .content > .txt {
+    font-size: 21px;
+    padding: 0 95px 0 100px;
+    font-family: sans-serif;
+}
+
+.container > .content > .form  {
+    padding: 0 95px 46px 100px;
+}
+
+.container > .content > .form > input {
+    margin-top: 50px;
+    width: 552px;
+    border: none;
+    border-bottom: 2px solid;
+    outline:none;
+}
+ .content > .btn-send {
+     border: 3px solid #000;
+     width: 549px;
+     height: 43px;
+     margin: 0 auto;
+     cursor: pointer;
+     text-align: center;
+     padding-top: 10px;
+     font-size: 15px;
+     font-weight: bold;
+     text-transform: uppercase;
+     font-family: sans-serif;
+}
+
+ .content > .btn-send:hover {
+     border: 3px solid;
+     width: 549px;
+     height: 43px;
+     margin: 0 auto;
+     background: black;
+     border: 2px solid black;
+     color: #fff;
+     cursor: pointer;
+ }
+
+.main-article {
+    width: auto;
+    max-width: 1303px;
+    background: green;
+    margin: 0 auto;
+}
+
+.content-left a > span {
+    position: absolute;
+    margin-top: 453px;
+    color: #fff;
+    height: 156px;
+    background: #00000096;
+    max-width: 652px;
+    width: 100%;
+    border: none;
+}
+
+.main-article {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+/*1 ряд*/
+.container-free {
+    margin: 0 auto;
+    max-width: 1307px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container-free a > .free {
+    width: 100%;
+    max-width: 807px;
+    display: inline-block;
+    background-image: url("http://widefon.com/_ld/125/87237720.jpg");
+    background-position-x: center;
+    background-position-y: center;
+    margin-right: -4px;
+    vertical-align: top;
+}
+
+.free > .inscription {
+    margin-top: 282px;
+}
+.free > .inscription > .title {
+    display: inline-block;
+    padding: 15px;
+    background: #fff;
+    color: #000;
+    margin-top: -43px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.free > .inscription > .txt {
+    color: #fff;
+    padding-top: 0;
+    background: #000;
+}
+
+.free > .inscription > .txt:hover {
+    background: #0000007d;
+}
+
+.inscription > .txt >.date {
+    padding-top: 36px;
+    font-family: sans-serif;
+    margin-left: 20px;
+}
+
+.inscription > .txt > .lines {
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 20px 0 0 50px;
+}
+/*adapt*/ /*mesh*/
+.contf {
+    display: none;
+
+}
+@media screen and (max-width:1400px) {
+    .container-free  a > .free {
+        display: none;
+    }
+    .contf {
+        display: block;
+        max-width: 651px;
+        margin: 0 auto 10px;
+    }
+    .contf a img {
+        width: 100%;
+        max-width: 651px;
+    }
+    .category {
+        display: block;
+        max-width: 651px;
+        background: orange;
+        margin: 0 auto;
+    }
+}
+
+.container-right {
+    display: inline-block;
+    max-width: 600px;
+}
+
+.container-right a {
+    text-decoration: none;
+}
+.container-free > a > .free > .title {
+    background:#00000066;
+    margin-top: 308px;
+    height: 192px;
+}
+
+/*черный квадрат*/
+.container-right > a > .free2 {
+    width: 500px;
+    background: #000;
+    color: #fff;
+    margin: 0 auto;
+    padding-top: 90px;
+    background-image: url("https://ic.pics.livejournal.com/0bovsemka/40746222/938093/938093_900.jpg");
+}
+
+.container-right a > .free2 > .inscription {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+
+a > .free2  > .inscription > .title {
+    background: #fff;
+    height: 40px;
+    padding: 15px;
+    font-weight: bold;
+    max-width: 94px;
+    width: 100%;
+    color: #000;
+}
+
+ .container-right > a > .free3 {
+    display: block;
+    width: 500px;
+    background: #b67f7f;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.container-right > a > .free3 > .inscription {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 12px;
+    padding-top: 67px;
+    background-image: url("http://matreshkatour.com/upload/iblock/548/548509e37103a89672feb43158d67bb5.jpg");
+}
+
+.free3  > .inscription > .title {
+    background: #fff;
+    height: 40px;
+    padding: 15px;
+    font-weight: bold;
+    max-width: 94px;
+    width: 100%;
+    color: #000;
+}
+
+.inscription > .txt {
+    width: 100%;
+    background: black;
+    text-align: left;
+    padding: 26px 0 20px;
+}
+.inscription > .txt:hover {
+    background: #00000078;
+}
+
+.inscription > .txt > .date2 {
+    margin: 0 0 10px 8px;
+}
+
+.inscription > .txt > .date3 {
+    padding: 0 0 20px 8px;
+}
+
+.container-right-adapt {
+    display: none;
+}
+
+@media screen and (max-width:1400px) {
+    .container-right {
+        display: none;
+    }
+
+    .container-right-adapt {
+        display: block;
+        max-width: 651px;
+        height: 500px;
+        margin: 0 auto;
+        background: green;
+    }
+}
+
+.inscription > .txt > .line {
+    font-size: 24px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+/*конец 1 ряда*/
+
+/*2 ряд*/
+.oneline {
+    width: 100%;
+    max-width: 1307px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.oneline > .one-img {
+    width: 350px;
+    height: 270px;
+    background: black;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.oneline > .one-img:nth-child(3) {
+    height: 470px;
+    margin: 0 50px;
+}
+.oneline > .one-img-ad {
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+    .oneline > .one-img {
+        display: none;
+}
+    .oneline > .one-img-ad {
+        display: block;
+        width: 200px;
+        height: 200px;
+        background: red;
+    }
+}
+
+/* 1 ряд */
+.cont {
+    width: 100%;
+    max-width: 1309px;
+    margin: 0 auto;
+}
+
+.cont > a {
+    display: inline-block;
+    width: 348px;
+    height: 269px;
+    vertical-align: top;
+    margin-bottom: 0px;
+    padding-top: 95px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-image: url("https://www.opentown.org/store/news/72319/fotopreview.jpg?upd=00000000000000");
+}
+
+.cont > a:nth-child(2) {
+    height: 521px;
+    margin: 0 128px 0px;
+    padding-top: 347px;
+    background-image: url("https://www.opentown.org/store/news/72319/fotopreview.jpg?upd=00000000000000");
+}
+
+.cont > a >.category {
+    background: #fff;
+    display: inline-block;
+    padding: 11px 12px;
+    font-size: 12px;
+    color: #000;
+}
+
+.cont > a > .title {
+    height: 139px;
+    background: #000000a3;
+    color: #fff;
+}
+
+.cont > a > .title:hover {
+    background: #000;
+}
+.title > .date {
+    padding: 17px 0 0 12px;
+}
+
+.title > .inscription {
+    display: inline-block;
+    padding: 15px 0 0 22px;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:1000px) {
+    .title > .inscription {
+        display: inline-block;
+        padding: 15px 0 0 22px;
+        font-family: sans-serif;
+        font-size: 26px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .cont3 > a > .hello3 > .title {
+        padding: 16px 0 4px;
+    }
+    .title > .inscription {
+        display: inline-block;
+        padding: 15px 17px 26px 22px;
+        font-family: sans-serif;
+        font-size: 23px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width:570px) {
+    .cont3 > a > .hello3 > .title {
+        padding: 16px 0 4px;
+    }
+    .title > .inscription {
+        display: inline-block;
+        padding: 15px 17px 28px 22px;
+        font-family: sans-serif;
+        font-size: 22px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+
+@media screen and (max-width:524px) {
+    .cont3 > a > .hello3 > .title {
+        padding: 16px 0 6px;
+    }
+    .title > .inscription {
+        display: inline-block;
+        padding: 15px 17px 35px 22px;
+        font-family: sans-serif;
+        font-size: 19.2px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width:504px) {
+    .title > .inscription {
+        font-size: 19.2px;
+        padding: 18px 17px 23px 23px;
+    }
+}
+
+@media screen and (min-width:400px) and (max-width:404px) {
+    .title > .inscription {
+        font-size: 17.2px;
+        padding: 26px 17px 8px 22px;
+    }
+}
+
+.cont > a >.category:nth-child(2n) {
+    margin: 0 124px;
+    height: 470px;
+}
+
+.cont-ad {
+    display: none;
+    max-width: 436px;
+    height: 469px;
+    background: black;
+}
+
+.cont-ad > a .hello-ad {
+    width: auto;
+    background: #000;
+    border: 0;
+    box-shadow: none;
+    color: #fff;
+    font-size: 34px;
+    padding: 18px 11px 18px;
+}
+
+@media screen and (max-width:1200px) {
+    .cont {
+        display: none;
+    }
+    .cont-ad {
+        display: block;
+        margin: 0 auto;
+        height: auto;
+        max-width: 649px;
+        text-align: center;
+    }
+    .cont-ad a img {
+        width: 100%;
+    }
+}
+
+/* 2 range*/
+ .cont2 {
+    width: 100%;
+    max-width: 1308px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+.cont2 > a > .hello2 {
+    display: inline-block;
+    width: 348px;
+    height:472px;
+    vertical-align: top;
+    padding-top: 276px;
+    margin-top: -199px;
+    background-image: url("https://www.opentown.org/store/news/72319/fotopreview.jpg?upd=00000000000000");
+}
+
+.cont2 > a:nth-child(2) {
+    margin: 60px 128px 0;
+}
+
+a > .hello2:nth-child(2) {
+    margin-top: -50px;
+    background: red;
+}
+
+a > .hello2 > .title {
+    height: 162px;
+    background: #000000a3;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding-top: 16px;
+}
+
+ a > .hello2 > .title:hover {
+    background: #000;
+}
+
+.cont2 > a > .hello3 {
+    display: inline-block;
+    width: 348px;
+    vertical-align: top;
+    padding-top: 90px;
+    background-image: url("https://www.opentown.org/store/news/72319/fotopreview.jpg?upd=00000000000000");
+}
+
+.cont2 > a:nth-child(2) {
+    margin: 60px 128px 0;
+}
+
+a > .hello3:nth-child(2) {
+    margin-top: -50px;
+}
+
+a > .hello3 > .title {
+    background: #000000a3;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 16px 0 21px;
+}
+
+ a > .hello3 > .title:hover {
+    background: #000;
+}
+
+.category {
+    background: #fff;
+    display: inline-block;
+    padding: 11px 12px;
+    font-size: 11px;
+    color: #000;
+    text-transform: uppercase;
+    font-family:sans-serif;
+    font-weight: bold;
+}
+
+.cont-ad2 {
+    display: none;
+    max-width: 436px;
+}
+
+@media screen and (max-width:1400px) {
+    .cont2 {
+        display: none;
+    }
+    .cont-ad2 {
+        display: block;
+        margin: 0 auto;
+        max-width: 860px;
+        text-align: center;
+    }
+    .cont-ad2 img {
+        width: 100%;
+    }
+}
+
+/* 3 range*/
+ .cont3 {
+    width: 100%;
+    max-width: 1310px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cont3 > a {
+    height: 500px;
+}
+
+.cont3 > a > .hello3 {
+    display: inline-block;
+    width: 348px;
+    height: 260px;
+    vertical-align: top;
+}
+
+.cont3 > a > .hello3:nth-child(odd) {
+    padding-top: 300px;
+    margin: 0 auto;
+    height: 484px;
+    text-align: left;
+    background-size: cover;
+    background-image: url("https://www.opentown.org/store/news/72319/fotopreview.jpg?upd=00000000000000");
+}
+
+.cont3 > a > .hello3:nth-child(2) {
+    padding-top: 300px;
+    margin: 0 auto;
+    height: 490px;
+    background-image: url("https://www.opentown.org/store/news/72319/fotopreview.jpg?upd=00000000000000");
+}
+.cont3 > a > .hello3 {
+    margin: 0 50px;
+}
+
+.cont3 > a:nth-child(2) {
+    margin: 0 129px;
+}
+
+@media screen and (max-width:1400px) {
+    .cont3 > a:nth-child(2) {
+      margin: 0 19px;
+  }
+}
+
+@media screen and (max-width:1200px) {
+    .cont3 > a:nth-child(2) {
+        display: block;
+        margin: 30px auto 30px;
+        width: auto;
+        height: auto;
+    }
+}
+
+.cont3 > a > .hello3 > .title {
+    background:#000000a3;
+    color: #fff;
+}
+
+.cont3 > a > .hello3 > .title:hover {
+    background:#000;
+}
+
+.cont-ad3 {
+    display: none;
+    max-width: 436px;
+    height: 469px;
+    background: black;
+}
+
+@media screen and (max-width:1000px) {
+    .cont3 {
+        display: block;
+    }
+    .cont3 > a > .hello3:nth-child(odd) {
+        display: block;
+        width: 100%;
+        max-width: 651px;
+    }
+    .cont3 > a > .hello3 > .title {
+        padding: 16px 0 22px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .cont3 {
+        display: block;
+    }
+    .cont3 > a > .hello3:nth-child(odd) {
+        display: block;
+        width: 100%;
+        max-width: 651px;
+    }
+    .cont3 > a > .hello3 > .title {
+        padding: 16px 0 5px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .cont3 {
+        display: block;
+    }
+    .cont3 > a > .hello3:nth-child(odd) {
+        display: block;
+        width: 100%;
+        max-width: 651px;
+        height: auto;
+    }
+    .cont3 > a > .hello3 > .title {
+        padding: 16px 0 5px;
+    }
+}
+
+/* 4 range*/
+ .cont4 {
+    width: 100%;
+    max-width: 1310px;
+    margin: 0 auto 0;
+}
+
+.cont4 > a {
+    height: 500px;
+}
+.cont4 > a > .hello4 {
+    display: inline-block;
+    width: 348px;
+    height: 260px;
+    vertical-align: top;
+}
+
+.cont4 > a > .hello4:nth-child(odd) {
+    padding-top: 95px;
+    margin: 0 auto;
+    height: 282px;
+    background-image: url("https://www.opentown.org/store/news/72319/fotopreview.jpg?upd=00000000000000");
+}
+
+.cont3 > a > .hello4:nth-child(2) {
+    padding-top: 300px;
+    margin: 0 auto;
+    height: 488px;
+    background-image: url("https://www.opentown.org/store/news/72319/fotopreview.jpg?upd=00000000000000");
+}
+.cont4 > a > .hello4 {
+    margin: 0 50px;
+}
+
+.cont4 > a:nth-child(2) {
+    margin: 0 129px;
+    height: 600px;
+}
+/*названия блоков*/
+.cont4 > a > .hello4 > .title {
+    background:#000000a3;
+    color: #fff;
+    height: 154px;
+}
+
+.cont4 > a > .hello4 > .title:hover {
+    background:#000;
+}
+
+.cont-ad4 {
+    display: none;
+    max-width: 436px;
+    height: 469px;
+    background: black;
+}
+
+@media screen and (max-width:1400px) {
+    .cont4 { max-width: 1089px; }
+    .cont4 > a:nth-child(2) {
+        margin: 0 18px;
+     }
+    .cont4 > a > .hello4:nth-child(odd) {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:1200px) {
+   .cont4 {
+        text-align: center;
+    }
+    .cont4 > a:nth-child(2) {
+        display: block;
+        margin: 33px 32px 20px;
+        height: auto;
+     }
+     .cont4 > a > .hello4:nth-child(odd) {
+         text-align: left;
+     }
+}
+
+@media screen and (max-width:1000px) {
+    .cont4 {
+        display: none;
+    }
+    .cont-ad4 a > .hello-ad4 {
+        display: block; margin: 0 auto;
+        max-width: 647px;
+        text-align: center;
+        background-image: url("https://www.opentown.org/store/news/72319/fotopreview.jpg?upd=00000000000000");
+    }
+}
+
+/* 5 range*/
+ .cont5 {
+    width: 100%;
+    max-width: 1310px;
+    margin: 43px auto 0px;
+}
+
+.cont5 > a {
+    height: 500px;
+}
+.cont5 > a > .hello5 {
+    display: inline-block;
+    width: 348px;
+    height: 260px;
+    vertical-align: top;
+}
+
+.cont5 > a > .hello5:nth-child(odd) {
+    padding-top: 95px;
+    margin: 0 auto;
+    height: 282px;
+    background-image: url("https://www.opentown.org/store/news/72319/fotopreview.jpg?upd=00000000000000");
+}
+
+.cont5 > a > .hello5:nth-child(2) {
+    padding-top: 300px;
+    margin: 0 auto;
+    height: 488px;
+    background-image: url("https://www.opentown.org/store/news/72319/fotopreview.jpg?upd=00000000000000");
+}
+.cont5 > a > .hello5 {
+    margin: 0 50px;
+}
+
+.cont5 > a:nth-child(2) {
+    margin: 0 129px;
+    height: 600px;
+}
+/*названия блоков*/
+.cont5 > a > .hello5 > .title {
+    background:#000000a3;
+    color: #fff;
+    height: 154px;
+}
+
+.cont5 > a > .hello5 > .title:hover {
+    background:#000;
+}
+
+.cont-ad5 {
+    display: none;
+    max-width: 436px;
+    height: 469px;
+    background: black;
+}
+
+@media screen and (max-width:1400px) {
+    .cont5 { max-width: 1089px; }
+    .cont5 > a:nth-child(2) {
+        margin: 0 18px;
+     }
+    .cont5 > a > .hello5:nth-child(odd) {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:1200px) {
+   .cont5 {
+        text-align: center;
+    }
+    .cont5 > a:nth-child(2) {
+        display: block;
+        margin: 33px 32px 20px;
+        height: auto;
+     }
+     .cont5 > a > .hello4:nth-child(odd) {
+         text-align: left;
+     }
+}
+
+@media screen and (max-width:1000px) {
+    .cont5 {
+        display: none;
+    }
+    .cont-ad5 a > .hello-ad5 {
+        display: block; margin: 0 auto;
+        max-width: 647px;
+        text-align: center;
+        background-image: url("https://www.opentown.org/store/news/72319/fotopreview.jpg?upd=00000000000000");
+    }
+}
+
+/*6 range*/
+.cont6 {
+   width: 100%;
+   max-width: 1310px;
+   margin: 0 auto 20px;
+}
+
+.cont6 > a {
+   height: 500px;
+}
+.cont6 > a > .hello6 {
+   display: inline-block;
+   width: 348px;
+   height: 260px;
+   vertical-align: top;
+}
+
+.cont6 > a > .hello6:nth-child(odd) {
+   padding-top: 95px;
+   margin: 0 auto;
+   height: 282px;
+   background-image: url("https://www.opentown.org/store/news/72319/fotopreview.jpg?upd=00000000000000");
+   text-align: left;
+}
+
+.cont6 > a > .hello6:nth-child(2) {
+   padding-top: 300px;
+   margin: 0 auto;
+   height: 488px;
+   background-image: url("https://www.opentown.org/store/news/72319/fotopreview.jpg?upd=00000000000000");
+}
+.cont6 > a > .hello6 {
+   margin: 0 50px;
+}
+
+.cont6 > a:nth-child(2) {
+   margin: 0 129px;
+   height: 600px;
+}
+/*названия блоков*/
+.cont6 > a > .hello6 > .title {
+   background:#000000a3;
+   color: #fff;
+   height: 154px;
+}
+
+.cont6 > a > .hello6 > .title:hover {
+   background:#000;
+}
+
+.cont-ad6 {
+   display: none;
+   max-width: 436px;
+   height: 469px;
+   background: black;
+}
+
+@media screen and (max-width:1400px) {
+   .cont6 { max-width: 1089px; }
+   .cont6 > a:nth-child(2) {
+       margin: 0 18px;
+    }
+   .cont6 > a > .hello5:nth-child(odd) {
+       text-align: left;
+   }
+}
+
+@media screen and (max-width:1200px) {
+  .cont6 {
+       text-align: center;
+   }
+   .cont6 > a:nth-child(2) {
+       display: block;
+       margin: 33px 32px 20px;
+       height: auto;
+    }
+    .cont6 > a > .hello4:nth-child(odd) {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:1000px) {
+   .cont6 {
+       display: none;
+   }
+   .cont-ad6 a > .hello-ad6 {
+       display: block; margin: 0 auto;
+       max-width: 647px;
+       text-align: center;
+       background-image: url("https://www.opentown.org/store/news/72319/fotopreview.jpg?upd=00000000000000");
+   }
+}
+
+/**/
+.load {
+    padding: 25px 0 70px;
+}
+.btn-load {
+    text-transform: uppercase; font-family: sans-serif;
+    max-width: 350px;
+    height: 60px;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    border: 3px solid;
+    cursor: pointer;
+}
+
+.btn-load:hover {
+    background: #000;
+    color:#fff;
+    border: 3px solid #000;
+    transition: 0.3s;
+}
+/*Белый footer*/
+/*footer inform "social-network"*/ /*footer - под надписью load more*/
+/*padding для footer-info*/
+.footer-info {
+    margin: 0 auto;
+    background: white;
+    padding-top: 51px;
+}
+
+.footer-info > .container-footer {
+    margin: 0 auto;
+    width: auto;
+    max-width: 1147px;
+}
+
+ .container-footer > .description {
+    max-width: 341px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.container-footer > .description > .title {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    padding-bottom: 31px;
+}
+
+ .container-footer > .description > .title-two {
+    display: none;
+}
+
+.container-footer > .description > .text {
+    font-family: sans-serif;
+    padding-bottom: 31px;
+}
+
+.footer-info > .container-footer > .discription-adapt {
+    display: none;
+}
+/*=============================f======================================*/
+@media screen and (max-width:1200px){
+     .container-footer > .description {
+        display: none;
+    }
+    .footer-info > .container-footer > .discription-adapt {
+        display: block;
+        vertical-align: top;
+        width: auto;
+        max-width: 261px;
+        height: max-content;
+        margin: 0 auto 0;
+        text-align: left;
+        font-family: sans-serif;
+    }
+
+     .container-footer > .discription-adapt > .btn {
+        width: 10px;
+        height: 10px;
+        background: red;
+     }
+/*====================================*/
+     .div1 {
+        font-family: sans-serif;
+        text-align:left;
+    }
+
+     .div1 > h2 {
+        font-size: 24px;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        margin: 0 0 30px;
+    }
+
+    .container-div1 >.div1 {
+        display: inline-block;
+        width: 88%;
+        background: black;
+        max-width: 120px;
+        height: 60;
+    }
+}
+
+.container-btn {
+    max-width: 341px;
+    margin: 0 auto;
+    padding-top: 34px;
+}
+
+.container-btn > .btn {
+    display: inline-block;
+    height: 60px;
+    padding-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #7d7d7d;
+}
+
+.container-btn > .btn:hover {
+    background: #7d7d7d;
+    cursor: pointer;
+    color: #fff;
+}
+
+.container-btn > .btn:nth-child(1n) {
+    margin: 0 10px 20px 0;
+    width: 150px;
+    border: 3px solid #7d7d7d;
+}
+
+.container-btn > .btn:nth-child(-n+2) {
+    margin-bottom: 20px;
+    width: 150px;
+    height: 60px;
+}
+
+@media screen and (max-width:1200px){
+    .discription-adapt > .div1 > .div1-text {
+        display: none;
+    }
+    .discription-adapt >.container-btn-adapt {
+        width: 100%;
+        max-width: 960px;
+    }
+    .discription-adapt >.container-btn-adapt:nth-child(2n+1) {
+        margin-bottom: 20px;
+    }
+    .discription-adapt >.container-btn-adapt > .container-in {
+        margin-top: 30px;
+    }
+     .container-in > a .btn {
+        display: inline-block;
+        width: 88%;
+        height: 60px;
+        border: 3px solid #000;
+        color: #000;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-top: 19px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .container-in > a .btn:hover {
+        background: #000;
+        color: #fff;
+    }
+}
+
+/*latest-post*/
+.latest-post {
+    width:100%;
+    text-align: left;
+    display: inline-block;
+    max-width: 452px;
+    margin: 0 50px 0 50px;
+    vertical-align: top;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.latest-post:nth-child(-n+2) {
+    margin-bottom: 41px;
+}
+
+.latest-post-try {
+    display: none;
+    width: auto;
+    max-width: 459px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+@media screen and (max-width:1200px) {
+    .latest-post {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .latest-post-try {
+        display:block;
+        vertical-align: top;
+        width: auto;
+        max-width: 261px;
+        font-family: sans-serif;
+    }
+/*черные квадраты*/
+    a .post-try {
+        background-image: url("https://www.1zoom.ru/big2/919/325807-svetik.jpg");
+        max-width: 265px;
+        height: 150px;
+        margin: 3px auto 20px;
+        display: inline-block;
+        font-family: sans-serif;
+        color: #fff;
+        font-size: 20px;
+        text-align: left;
+        padding: 46px 0 0 0px;
+        background-size: cover;
+    }
+
+    a .post-try p {
+        background: #000;
+        padding: 8px 14px;
+    }
+    a .post-try p:hover {
+        background: #0000007a;
+    }
+}
+
+@media screen (min width:1067px) and (max-width:1231px) {
+    .latest-post-try {
+        display:block;
+        vertical-align: top;
+        width: auto;
+        max-width: 360px;
+        margin: 0 auto;
+        text-align: center;
+        font-family: sans-serif;
+    }
+/*черные квадраты*/
+    .post-try {
+        background: black;
+        width: 157px;
+        height: 150px;
+        display: inline-block;
+        font-family: sans-serif;
+        margin: 7px 1px;
+    }
+    .post-try img {
+        width: 100%;
+    }
+}
+
+@media screen (min width:1067px) and (max-width:1190px) {
+    .latest-post-try {
+        display:inline-block;
+        vertical-align: top;
+        width: auto;
+        max-width: 360px;
+        margin: 0 auto;
+        text-align: center;
+        font-family: sans-serif;
+    }
+/*черные квадраты*/
+    .post-try {
+        background: black;
+        width: 157px;
+        height: 150px;
+        display: inline-block;
+        font-family: sans-serif;
+        margin: 7px 1px;
+    }
+}
+.latest-post > .title {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    text-align: left;
+}
+
+.latest-post > a .post1  {
+    display: inline-block;
+    width: 200px;
+    background: red;
+    margin: 35px 47px 0 0;
+    background-image: url('https://www.desktopbackground.org/download/1280x960/2010/06/20/36084_download-free-super-hd-nature-wallpapers-ubaid-sheikh_1920x1200_h.jpg');
+}
+
+.latest-post > a .post1:nth-child(odd) {
+    margin-right: 23px;
+}
+
+.post1 > .inscription {
+    color: #fff;
+    margin-top: 51px;
+    background: #000;
+    padding: 34px 20px;
+    font-weight: bold;
+}
+
+.post1 > .inscription:hover {
+    background: #0000005c;
+}
+
+.latest-post > .container-post2 {
+    display: none;
+    width: auto;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.latest-post > .post2 {
+    display: none;
+    width: 400px;
+    height: 200px;
+    background: blue;
+}
+
+@media screen and (max-width:1200px) {
+    .latest-post > .post1 {
+        display: none;
+    }
+    .latest-post > .container-post2 {display: block;}
+
+    .latest-post > .container-post2 > .post2 {
+        display: block;
+        width: 100%;
+        background: green;
+        max-width: 700px;
+        height: 154px;
+        margin: 0 auto 20px;
+    }
+}
+
+.instagram {
+    vertical-align: top;
+    width: auto;
+    max-width: 230px;
+    display: inline-block;
+}
+
+.instagram h2 {
+    margin: 0 auto 34px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: left;
+    font-weight: normal;
+}
+.instagram > .close {
+    display: inline-block;
+    width: 115px;
+    height: 96px;
+    margin: -1px 0 -4px;
+    background-image: url("https://www.1zoom.ru/big2/919/325807-svetik.jpg");
+    background-size: cover;
+}
+
+
+.instagram-adapt {
+    display: none;
+}
+
+@media screen and (max-width:1200px) {
+    .instagram {
+        display: none;
+    }
+
+.instagram-adapt {
+    max-width: 261px;
+    display: block;
+    margin: 0 auto;
+    font-family: sans-serif;
+    text-transform: uppercase;
+  }
+}
+
+.instagram-adapt > .come  {
+    height: 162px;
+    margin: 0 auto;
+    background-image: url("https://www.1zoom.ru/big2/919/325807-svetik.jpg");
+    background-size: cover;
+    }
+}
+/*самый нижний черный footer*/
+/*footer*/
+.contact {
+    background: red;
+    padding: 0;
+}
+.footer {
+    width: 100%;
+    height: 62px;
+    padding: 20px 20px 0;
+    background:#000000c7;
+}
+
+/*footer*/
+.footer > .footer-container {
+    width: auto;
+    max-width: 1152px;
+    margin: 0 auto;
+    padding: 3px 0 2px;
+}
+
+/**/
+/*самый нижний черный footer*/
+.footer-down {
+    width: 100%;
+    padding: 0;
+}
+.footer {
+    width: auto;
+    height: 58px;
+    background:#000000c9;
+    padding: 0 20px;
+    border-bottom: 1px solid #0b51c4;
+    border-top: 1px solid #0b51c4;
+}
+/*footer*/
+.footer > .footer-container {
+    width: auto;
+    max-width: 1152px;
+    margin: 0 auto;
+}
+
+/*footer*/
+.footer > .footer-container > .copyright {
+    color: #8e8e8e;
+    font-family: sans-serif;
+    float: left;
+    padding: 23px 0 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+/*footer*/
+.footer > .footer-container > .designer {
+    color: #8e8e8e;
+    font-family: sans-serif;
+    padding:23px 0 10px;
+    text-transform: uppercase;
+    float: right;
+    font-size: 15px;
+}
+/*footer*/
+@media screen and (max-width:503px) {
+    .footer > .footer-container > .copyright {
+        font-size: 12px;
+    }
+     .footer > .footer-container > .designer {
+         font-size: 12px;
+     }
+}
+
+/**/

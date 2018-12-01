@@ -1,0 +1,723 @@
+html,body {
+    margin: 0;
+    font-size: 16px;
+    transition: 3s;
+    background-image: url("http://s1.1zoom.me/big0/583/422309-Kycb.jpg");
+    background-size:cover;
+    background-repeat: repeat-x;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+section {
+    width: 100%;
+    padding: 20px;
+}
+
+
+.container {
+    width: auto;
+    max-width: 1303px;
+    margin: 0 auto;
+}
+
+.container-two {
+    display: none;
+}
+
+/*меню*/
+@media screen and (max-width:1000px) {
+    .container {
+        display: none;
+    }
+    .container-two {
+        display: block;
+    }
+}
+
+.container > .content-left {
+    display: inline-block;
+    font-size: 50px;
+}
+
+.container > .content-left > a .logo {
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #000;
+}
+
+.container > .content-right {
+    text-align: right;
+    display: inline-block;
+    float: right;
+    padding-top: 5px;
+}
+
+ .menu {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 15px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 62px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.menu li a:hover {
+    text-decoration: none;
+    color: #000;
+}
+.menu > .categories {}
+
+.menu > .blog {
+    border-bottom: 2px solid;
+}
+
+/*==================== modal subscribe ==========================*/
+
+.button {
+    border: 3px solid;
+    display: inline-block;
+    width: 430px;
+    text-align: center;;
+    padding: 20px 0 20px;
+    cursor: pointer;
+}
+
+span {
+    cursor: pointer;
+    display: inline-block;
+    border:2px solid #000;
+    padding: 13px 16px 12px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+span:hover {
+    cursor: pointer;
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    border:2px solid #000;
+    padding: 13px 16px 12px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s;
+    box-shadow: 0 0 2px 0px black;
+}
+
+.modal {
+    position: absolute;
+    width: 526px;
+    top:-99999px;
+    font-size: 24px;
+    text-align: left;
+    margin-left: -253px;
+    left: 50%;
+    padding: 20px;
+    color: #fff;
+    font-family: sans-serif;
+    z-index: 9999;
+   }
+.overflow {
+    width: 100%;
+    height: 349px;
+    margin-top: 116px;
+    z-index: 9998;
+    background: #000;
+    position: absolute;
+    top: 0;
+ }
+
+/*Выделение input*/
+.modal > input {
+    width: 454px;
+    outline: none;
+    background: transparent;
+    border: 0;
+    color: #fff;
+    border-bottom: 1px solid;
+    margin-bottom: 40px;
+}
+
+.modal h1 {
+    font-size: 24px;
+}
+
+/*================== ================================*/
+
+.container-about {
+    padding-top: 315px;
+}
+
+/*categores*/
+.about-info {
+    max-width: 748px;
+    width: auto;
+    background: #00000057;
+    margin: 0 auto;
+}
+
+.about-info h2 {
+    padding: 43px 10px 38px 101px;
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 40px;
+}
+
+@media screen and (max-width:1000px) {
+    .about-info h2 {
+        font-size: 37px;
+        padding: 43px 97px 38px 67px;
+    }
+}
+
+/*основной текст по середине экрана*/
+.about-info > .text {
+    max-width: 748px;
+    background: white;
+    padding: 76px 100px 55px;
+    border: 2px solid;
+    font-family: sans-serif;
+}
+
+.about-info > .text  > .line {
+    margin-bottom: 15px;
+}
+
+.about-info > .strong  > .line {
+    margin-bottom: 31px;
+}
+
+@media screen and (max-width:670px) {
+    .about-info h2 {
+        padding: 43px 40px 38px 32px;
+    }
+    .about-info > .text {
+        padding: 76px 30px 34px 56px;
+    }
+}
+
+/*жирный текст*/
+.about-info >.text > .strong {
+    font-weight: bold;
+    padding-top: 46px;
+}
+
+@media screen and (max-width:700px) {
+    .about-info >.text > .strong {
+        font-weight: bold;
+        padding-top: 46px;
+        font-size: 20px;
+    }
+}
+/*черта*/
+.text > .strong::before{
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 2;
+    background:#000;
+    margin-top: 9px;
+    margin-left: -100px;
+}
+
+.about-info > .text2 {
+    max-width: 748px;
+    background: white;
+    padding: 76px 100px;
+}
+
+.text > .strong > .line {
+    margin-bottom: 16px;
+}
+
+.text > .strong > .line:nth-last-child(1) {
+    margin-bottom: 0;
+}
+/**/
+
+hr {
+    margin: 65px 0 0;
+    opacity: 1;
+}
+
+/*footer inform "social-network"*/ /*footer - под надписью load more*/
+/*padding для footer-info*/
+.footer-info {
+    margin: 0 auto;
+    background: white;
+    padding-top: 51px;
+}
+
+.footer-info > .container-footer {
+    margin: 0 auto;
+    width: auto;
+    max-width: 1147px;
+}
+
+ .container-footer > .description {
+    max-width: 341px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.container-footer > .description > .title {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    padding-bottom: 31px;
+}
+
+ .container-footer > .description > .title-two {
+    display: none;
+    max-width: 341px;
+    margin: 0 auto;
+    vertical-align: top;
+}
+
+.container-footer > .description > .text {
+    font-family: sans-serif;
+    padding-bottom: 31px;
+}
+
+.footer-info > .container-footer > .discription-adapt {
+    display: none;
+}
+/*=============================f======================================*/
+@media screen and (max-width:1200px){
+     .container-footer > .description {
+        display: none;
+}
+    .footer-info > .container-footer > .discription-adapt {
+        display: block;
+        vertical-align: top;
+        width: auto;
+        max-width: 261px;
+        height: max-content;
+        margin: 0 auto 0;
+        text-align: left;
+        font-family: sans-serif;
+}
+/*====================================*/
+     .discription-adapt > .btn {}
+     .div1 {
+        font-family: sans-serif;
+        text-align:left;
+    }
+
+     .div1 > h2 {
+        font-size: 24px;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        margin: 0 0 30px;
+    }
+
+    .container-div1 > a .div1 {
+        display: inline-block;
+        width: 100%;
+        border: 3px solid #7d7d7d;
+        max-width: 261px;
+        height: 60;
+        margin-top: 20px;
+        color: #7d7d7d;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 19px;
+        text-transform: uppercase;
+    }
+
+    .container-div1 > a .div1:hover {
+        background: #7d7d7d;
+        color: #fff;
+    }
+}
+
+
+@media screen (max-width:625px){
+    .footer-info > .container-footer > .description {
+        display: none;
+    }
+    .footer-info > .container-footer > .discription-adapt {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .footer-info > .container-footer > .discription-adapt > .div1 {
+        font-family: sans-serif;
+        text-align: center;
+    }
+
+     .div1 > h2 {
+        font-family: sans-serif;
+        text-transform: uppercase;
+    }
+}
+
+.container-btn {
+    max-width: 341px;
+    margin: 0 auto;
+    padding-top: 34px;
+}
+
+.container-btn > .btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 60px;
+    padding-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #7d7d7d;
+}
+
+.container-btn > .btn:hover {
+    background: #7d7d7d;
+    cursor: pointer;
+    color: #fff;
+}
+
+.container-btn > .btn:nth-child(1n) {
+    margin: 0 10px 20 0;
+    width: 150px;
+    height: 60;
+    border: 3px solid #7d7d7d;
+}
+
+.container-btn > .btn:nth-child(-n+2) {
+    margin-bottom: 20px;
+    width: 150px;
+    height: 60px;
+}
+
+
+@media screen and (max-width:1200px){
+    .discription-adapt > .div1 > .div1-text {
+        display: none;
+    }
+
+    .discription-adapt >.container-btn-adapt {
+        width: 100%;
+        max-width: 960px;
+    }
+
+}
+
+/*latest-post*/
+.latest-post {
+    width:100%;
+    text-align: left;
+    display: inline-block;
+    max-width: 452px;
+    margin: 0 50px 0 50px;
+    vertical-align: top;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.latest-post:nth-child(-n+2) {
+    margin-bottom: 41px;
+}
+
+.latest-post-try {
+    display: none;
+    width: auto;
+    text-align: left;
+    max-width: 459px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+@media screen and (max-width:1200px) {
+    .latest-post {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .latest-post-try {
+        display:block;
+        vertical-align: top;
+        width: auto;
+        max-width: 261px;
+        font-family: sans-serif;
+    }
+/*черные квадраты*/
+    a .post-try {
+        max-width: 261px;
+        height: 150px;
+        margin: 3px auto;
+        display: inline-block;
+        font-family: sans-serif;
+        color: #fff;
+        padding-top: 73px;
+        background-image: url("https://www.motto.net.ua/old_site/img/places/1312791996_CDFCFE202D20E9EEF0EA.jpg");
+    }
+
+    .post-try > .hal {
+        background: #000;
+        padding: 20px;
+    }
+    .hal:hover {
+         background: #0000005e;
+    }
+}
+
+.latest-post > .title {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    text-align: left;
+}
+
+.latest-post > a {
+    text-decoration: none;
+}
+
+.latest-post > a .post1 {
+    display: inline-block;
+    width: 200px;
+    height: 154px;
+    background-image: url("https://www.1zoom.ru/big2/919/325807-svetik.jpg");
+    margin: 36px 47px 0 0;
+}
+
+.latest-post > a .post1:nth-child(odd) {
+    margin-right: 23px;
+}
+
+a .post1 > .inscription {
+    margin-top: 72px;
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+    padding: 17px 15px;
+    font-size: 14px;
+}
+
+a .post1 > .inscription:hover {
+    background: #0000005e;
+}
+
+.latest-post > .container-post2 {
+    display: none;
+    width: auto;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.latest-post > .post2 {
+    display: none;
+    width: 400px;
+    height: 200px;
+    background: blue;
+}
+
+@media screen and (max-width:1200px) {
+    .latest-post > a .post1 {
+        display: none;
+    }
+
+    .latest-post > .container-post2 {}
+
+    .latest-post > .container-post2 > .post2 {
+        display: block;
+        width: 100%;
+        background: green;
+        max-width: 700px;
+        height: 154px;
+        margin: 0 auto 20px;
+    }
+}
+
+.instagram {
+    vertical-align: top;
+    width: auto;
+    max-width: 219px;
+    display: inline-block;
+}
+
+.instagram h2 {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    margin: 0 auto 34px;
+    text-align: left;
+}
+.instagram > .close {
+    display: inline-block;
+    width: 106px;
+    height: 103px;
+    background-image: url("https://www.1zoom.ru/big2/919/325807-svetik.jpg");
+    background-size: cover;
+}
+
+.instagram-adapt {
+    display: none;
+}
+
+@media screen and (max-width:1200px) {
+.instagram {
+    display: none;
+}
+
+.instagram-adapt {
+    max-width: 261px;
+    display: block;
+    margin: 0 auto;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    }
+}
+
+.instagram-adapt > .come  {
+    background-image: url("https://www.1zoom.ru/big2/919/325807-svetik.jpg");
+    margin: 0 auto;
+    background-size: cover;
+    background-position-x: center;
+    height: 200px;
+    }
+}
+/*самый нижний черный footer*/
+/*footer*/
+.cont {
+    background: red;
+    padding: 0;
+}
+.footer {
+    width: 100%;
+    height: 62px;
+    padding: 20px 20px 0;
+    background:#000000c7;
+}
+
+/*footer*/
+.footer > .footer-container {
+    width: auto;
+    max-width: 1152px;
+    margin: 0 auto;
+    padding: 3px 0 2px;
+}
+
+
+/*footer*/
+@media screen and (max-width:403px){
+    .footer > .footer-container  {
+        display: none;
+    }
+
+    .footer > .footer-container-ad {
+        display: block;
+        padding: 20px;
+        font-size: 15px;
+        color: #fff;
+        font-family: sans-serif;
+        opacity: 0.3;
+        padding: 20px 20px 0;
+        text-transform: uppercase;
+        float: right;
+    }
+}
+
+
+@media screen and (max-width:200px){
+    .footer > .footer-container  {
+        display: none;
+    }
+
+    .footer > .footer-container-ad {
+        display: block;
+        padding: 27px 20px 0;
+        font-size: 15px;
+        color: #fff;
+        font-family: sans-serif;
+        opacity: 0.3;
+        text-transform: uppercase;
+        float: right;
+    }
+}
+
+
+/*footer*/
+.footer > .footer-container > .copyright {
+    color: #8e8e8e;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    display: inline-block;
+}
+/*footer*/
+.footer > .footer-container > .designer {
+    color: #8e8e8e;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    float: right;
+    font-size: 15px;
+}
+/*footer*/
+@media screen and (max-width:503px) {
+    .footer > .footer-container > .copyright {
+        font-size: 12px;
+    }
+     .footer > .footer-container > .designer {
+         font-size: 12px;
+     }
+}
+/*footer*/
+@media screen and (max-width:447px) {
+    .footer > .footer-container > .copyright {
+        font-size: 11px;
+    }
+     .footer > .footer-container > .designer {
+         font-size: 11px;
+     }
+}
+
+/*footer*/
+@media screen and (max-width:445px) {
+    .footer > .footer-container > .copyright {
+        font-size: 11px;
+    }
+     .footer > .footer-container > .designer {
+         display: block;
+         font-size: 11px;
+     }
+}
+
+/*footer*/
+@media screen and (max-width:123px) {
+    .footer > .footer-container > .copyright {
+        display: block;
+        font-size: 11px;
+    }
+     .footer > .footer-container > .designer {
+         display: block;
+         font-size: 11px;
+     }
+}
+
+
+/**/

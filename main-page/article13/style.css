@@ -1,0 +1,1209 @@
+html,body {
+    margin: 0;
+    font-size: 16px;
+    width: 100%;
+    background: #f8f8f8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+section {
+    width: 100%;
+    padding: 20px;
+}
+
+.container {
+    width: auto;
+    max-width: 1303px;
+    margin: 0 auto;
+}
+
+.container-two {
+    display: none;
+}
+
+.sub-menu {
+   display: none;
+   margin: 0;
+}
+.main-item:focus ~ .sub-menu,
+.main-item:active ~ .sub-menu,
+.sub-menu:hover {
+   display: inline-block;
+}
+
+.sub-menu li {
+    list-style-type: none;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0 40px;
+    font-weight: bold;
+}
+.sub-menu li a  {
+    text-decoration: none;
+    color: #000;
+}
+
+.main-item > .fas-fa-bars::before {
+    content: "\f0c9";
+    font-family: fontAwesome;
+    font-style: normal;
+    color: #000;
+    outline: none;
+}
+/*меню*/
+@media screen and (max-width:960px) {
+    .container {
+        display: none;
+    }
+    .container-two {
+        display: inline-block;
+    }
+}
+
+.container > .content-left {
+    display: inline-block;
+    font-size: 50px;
+}
+
+.container > .content-left > .logo {
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.container > .content-right {
+    margin-top: 8px;
+    text-align: right;
+    display: inline-block;
+    float: right;
+}
+
+ .menu {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 15px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 62px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.menu li a:hover {
+    text-decoration: none;
+    color: #000;
+}
+/*==================== modal subscribe ==========================*/
+
+.button {
+    border: 3px solid;
+    display: inline-block;
+    width: 430px;
+    text-align: center;
+    cursor: pointer;
+    padding: 20px;
+}
+
+span {
+    cursor: pointer;
+    display: inline-block;
+    border:2px solid #000;
+    padding: 13px 16px 12px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+span:hover {
+    cursor: pointer;
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    border:2px solid #000;
+    padding: 13px 16px 12px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s;
+    box-shadow: 0 0 2px 0px black;
+}
+
+.modal {
+    position: absolute;
+    width: 526px;
+    top:-99999px;
+    font-size: 24px;
+    text-align: left;
+    margin-left: -253px;
+    left: 50%;
+    padding: 20px;
+    color: #fff;
+    font-family: sans-serif;
+    z-index: 9999;
+ }
+.overflow {
+    width: 100%;
+    height: 349px;
+    margin-top: 98px;
+    z-index: 9998;
+    background: #000;
+    position: absolute;
+    top: 0;
+ }
+
+/*Выделение input*/
+.modal > input {
+    width: 454px;
+    outline: none;
+    background: transparent;
+    border: 0;
+    color: #fff;
+    border-bottom: 1px solid;
+    margin-bottom: 40px;
+}
+
+.modal h1 {
+    font-size: 24px;
+}
+
+.main-article {
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-article img {
+    width: 100%;
+    height: 892px;
+}
+
+.article {
+    position: relative;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.article > .content {
+    width: 89%;
+    max-width: 750px;
+    background: #0000007d;
+    margin: -335px auto 0;
+}
+
+.article > .content > .date {
+    color: #fff;
+    font-family: sans-serif;
+    padding: 43px 0 0 20px;
+}
+
+.article > .content > .title {
+    width: 100%;
+    font-size: 40px;
+    font-family: sans-serif;
+    padding: 20px 52px 0 46px;
+    color: #fff;
+    font-weight: bold;
+}
+
+@media screen and (max-width:1020px) {
+    .article > .content > .title {
+        font-size: 2.25rem;
+        padding: 19px 47px 20px;
+    }
+}
+
+@media screen and (max-width:355px) {
+    .article > .content > .title {
+        font-size: 1.4em;
+        padding: 19px 23px 20px;
+    }
+}
+
+.article > .content > .txt {
+    width: 100%;
+    background: #fff;
+    margin-top: 32px;
+}
+
+.txt > .subtitle {
+    font-size: 28px;
+    font-family: sans-serif;
+    padding: 60px 19px 20px 60px;
+}
+
+.txt > .subtitle-adapt {
+    display: none;
+}
+
+.txt > .subtitle > .number {
+    display: inline-block;
+    float: left;
+    margin:4px 25px 0 -12px;
+    font-size: 28px;
+}
+
+.txt > .subtitle > .number-ad {
+    display: none;
+}
+
+@media screen and (max-width:1000px) {
+    .txt > .subtitle {
+        padding: 60px 19px 0 27px;
+    }
+    .txt > .subtitle > .number {
+        display: none;
+    }
+    .txt > .subtitle > .number-ad {
+        display: inline-block;
+        font-size: 34px;
+        margin-top: 2px;
+    }
+
+}
+.sb-title {
+    font-size: 27px;
+    width: 472px;
+    margin: 5px 39px 0px;
+}
+
+@media screen and (max-width:1000px) {
+    .sb-title {
+        display: inline-block;
+        margin-left: 48px;
+        vertical-align: top;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .sb-title {
+        margin-left: 40px;
+    }
+}
+
+.sb-title-adapt {
+    display: none;
+}
+
+/*заголовок*/
+@media screen and (max-width:960px) {
+    .sb-title {
+        display: none;
+    }
+    .sb-title-adapt  {
+        display: block;
+        font-size: 38px;
+        margin-left: 42px;
+        padding: 0 19px 20px 27px;
+    }
+    .txt > .subtitle > .number-ad {
+         margin-left:4px;
+         float: left;
+    }
+}
+
+/*заголовок*/
+@media screen and (max-width:660px) {
+    .sb-title {
+        display: none;
+    }
+    .sb-title-adapt  {
+        display: block;
+        font-size: 26px;
+        margin-left: 42px;
+        padding: 0 1px 0 3px;
+    }
+    .txt > .subtitle > .number-ad {
+         margin-left:4px;
+        margin-top: -2px;
+        font-size: 31px;
+    }
+}
+
+
+.txt > .lines {
+    padding: -0px 105px 0px;
+ }
+.txt > .lines > .line {
+     font-family: sans-serif;
+ }
+.txt > .lines > .line:nth-child(1n) {
+     margin: 20px 0 0px;
+ }
+
+.txt > .paragraph {
+    margin-top: 41px;
+    font-family: sans-serif;
+    padding: 0px 60px 0 105px;
+}
+
+.txt > .paragraph h2 {
+    font-size: 28px;
+    text-transform: initial;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+.txt > .paragraph h2 > .number {
+    display: inline-block;
+    margin: 0 25px 0 -55px;
+    font-size: 28px;
+}
+
+.txt > .paragraph h2 > .him {
+    display: inline-block;
+}
+
+.paragraph h2 > .boom {
+    display: inline-block;
+    margin-left: -10px;
+}
+
+
+@media screen and (max-width:960px) {
+    .txt > .paragraph {
+      padding: 0px 38px 0 101px;
+    }
+    .txt > .paragraph h2 {
+        font-size: 33px;
+        margin: 0 auto 40px;
+    }
+    .txt > .paragraph h2 > .boom {
+        display: inline-block;
+        padding-left: 3px;
+    }
+    .txt > .lines {
+        padding: -0px 22px 0px 99px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:660px) {
+    .txt > .paragraph h2 {
+        font-size: 26px;
+    }
+    .txt > .lines {
+        padding: 0px 22px 0px 71px;
+        font-size: 18px;
+    }
+    .txt > .paragraph {
+        padding: 0px 38px 0 67px;
+    }
+
+    .txt > .paragraph h2 > .him{
+        display: inline-block;
+        padding-left: 5px;
+    }
+
+    .txt > .paragraph h2 > .boom {
+        padding-left: 4px;
+    }
+}
+
+.txt > .paragraph > .line {
+    margin-bottom: 12px;
+}
+
+.txt > .paragraph > .line:nth-last-of-type(1) {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width:960px) {
+    .txt > .paragraph > .line {
+        font-size:18px;
+        padding-left: 0;
+    }
+    .txt > .paragraph .line > .boom {
+        display: inline-block;
+    }
+}
+
+.img {
+    margin-top: 44px;
+    width: 100%;
+}
+
+.have {
+    padding-top: 53px;
+}
+
+.have h2 {
+    font-family: sans-serif;
+    margin-top: 0;
+    padding:0 63px 0 54px;
+    font-weight: normal;
+    font-size: 28px;
+}
+
+@media screen and (max-width:960px) {
+    .have h2  {
+        font-family: sans-serif;
+        margin-top: 0;
+        font-weight: normal;
+        padding: 0 24px 0 39px;
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .have h2  {
+        font-family: sans-serif;
+        margin-top: 0;
+        font-weight: normal;
+        padding: 0 24px 0 39px;
+        font-size: 26px;
+    }
+}
+
+
+.img img {
+    height: 500px;
+    width: 100%;
+    max-width: 750px;
+}
+
+.have > .paragraph {
+    max-width: 551px;
+    margin: 0 auto;
+    padding: 46px 0 54px;
+}
+
+.have > .paragraph p {
+    padding:0px 34px 46px;
+    margin: 0;
+}
+
+.have > .paragraph p:nth-child(3) {
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+@media screen and (max-width:1000px) {
+.paragraph > .line {
+    font-size: 15px;
+}
+.have > .paragraph p {
+    font-size: 20px;
+    padding: 0;
+    margin: 0 38px 0 58px;
+  }
+}
+
+
+
+@media screen and (max-width:500px) {
+.have > .paragraph p {
+    font-size: 15px;
+    padding: 0;
+    margin: 0 0px 0 8px;
+  }
+}
+
+
+.paragraph > .line:nth-child(1) {
+    background: red;
+}
+
+.btn {
+    max-width: 749px;
+    margin: 0 auto;
+    padding-top: 57px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.social-btn {
+    max-width: 667px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    padding: 50px 0 50px;
+}
+
+@media screen and (max-width:960px) {
+    .social-btn {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+.social-btn > .shares {
+    display: inline-block;
+    font-size: 15px;
+    margin-right: 58px;
+}
+
+@media screen and (max-width:960px) {
+    .social-btn > .shares {
+        display: block;
+        padding-bottom: 20px;
+        margin-right: 0;
+    }
+}
+.social-btn > .soc-facebook {
+    display: inline-block;
+    border: 2px solid #000;
+    padding: 20px 25px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.social-btn > .soc-facebook:hover {
+    color: #fff;
+    background: #000;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+@media screen and (max-width:540px) {
+    .social-btn > .soc-facebook {
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.social-btn > .soc-twitter {
+    display: inline-block;
+    font-family: sans-serif;
+    padding: 20px 37px;
+    font-weight: bold;
+    border: 2px solid #000;
+    margin: 0 21px;
+    font-size: 14px;
+}
+
+.social-btn > .soc-twitter:hover {
+    color: #fff;
+    background: #000;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+@media screen and (max-width:540px) {
+    .social-btn > .soc-twitter {
+        display: block;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+}
+.social-btn > .soc-googleplus {
+    display: inline-block;
+    font-family: sans-serif;
+    padding: 20px 25px;
+    font-weight: bold;
+    border: 2px solid #000;
+    font-size: 14px;
+}
+
+
+.social-btn > .soc-googleplus:hover {
+    color: #fff;
+    background: #000;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+@media screen and (max-width:540px) {
+.social-btn > .soc-googleplus  {
+        display: block;
+        margin: 0;
+    }
+}
+
+.related {
+    padding-top: 0;
+}
+
+.related-latest {
+    display: flex;
+    max-width: 1118px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.related-latest > a {
+    width: 100%;
+}
+
+.related-latest > a > .hello {
+    width: 100%;
+    max-width: 350px;
+    height: 270px;
+    display: inline-block;
+    color: #fff;
+    padding-top: 96px;
+    text-align: left;
+    background-image: url("https://s1.1zoom.ru/big0/34/322924-alexfas01.jpg");
+}
+
+.related-latest > a > .hello:nth-child(2) {
+    margin: 0 3%;
+}
+
+ .hello > .category {
+     color: #000;
+     background: #fff;
+     padding: 13px 13px;
+     display: inline-block;
+     margin-bottom: 0;
+     font-weight: bold;
+     text-transform: uppercase;
+     font-size: 12px;
+     font-family: sans-serif;
+ }
+
+
+.hello > .inscription {
+    height: 122px;
+    background: #0000005e;
+}
+
+.hello > .inscription:hover {
+    background: #000;
+}
+
+.hello > .inscription > .date {
+    font-family: sans-serif;
+    padding-top: 26px;
+    padding-left: 14px;
+}
+
+.hello > .inscription > .txt {
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 17px 0 19px 24px;
+}
+
+.related-latest-adapt {
+    display: none;
+}
+
+@media screen and (max-width:1150px) {
+    a {
+        text-decoration: none;
+        outline: none;
+    }
+    .related-latest {
+        display: none;
+    }
+
+    .related-latest-adapt {
+        display: block;
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .related-latest-adapt > a .hello1 {
+        background-image: url("https://s1.1zoom.ru/big0/34/322924-alexfas01.jpg");
+        margin-bottom: 50px;
+        padding-top: 96px;
+    }
+
+    a .hello1 > .category {
+        padding: 15px;
+        display: inline-block;
+        background: #fff;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        font-size: 11px;
+        color: #000;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a .hello1 > .inscription {
+        background: #000;
+        color: #fff;
+        padding: 31px 20px;
+        font-family: sans-serif;
+    }
+
+    a .hello1 > .inscription:hover {
+        background: #00000096;
+    }
+
+    a .txt {
+        padding-top: 16px;
+        font-size: 20px;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .related-latest {
+        display: none;
+    }
+
+    .related-latest-adapt {
+        display: block;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    a .txt {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .related-latest {
+        display: none;
+    }
+    .related-latest-adapt {
+        display: block;
+    }
+    a .txt {
+        font-size: 18px;
+    }
+}
+
+hr {
+    margin-top: 48px;
+}
+
+/*Белый footer*/
+/*footer inform "social-network"*/ /*footer - под надписью load more*/
+/*padding для footer-info*/
+.footer-info {
+    margin: 0 auto;
+    padding-top: 51px;
+}
+
+.footer-info > .container-footer {
+    margin: 0 auto;
+    width: auto;
+    max-width: 1147px;
+}
+
+ .container-footer > .description {
+    max-width: 341px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.container-footer > .description > .title {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    padding-bottom: 31px;
+}
+
+ .container-footer > .description > .title-two {
+    display: none;
+    max-width: 341px;
+    margin: 0 auto;
+    vertical-align: top;
+}
+
+.container-footer > .description > .text {
+    font-family: sans-serif;
+    padding-bottom: 31px;
+}
+
+
+.footer-info > .container-footer > .discription-adapt {
+    display: none;
+    width: 100px;
+
+}
+/*=============================f======================================*/
+@media screen and (max-width:1200px){
+     .container-footer > .description {
+        display: none;
+    }
+    .footer-info > .container-footer > .discription-adapt {
+        display: block;
+        vertical-align: top;
+        width: auto;
+        max-width: 261px;
+        height: max-content;
+        margin: 0 auto 0;
+        text-align: left;
+        font-family: sans-serif;
+    }
+
+     .container-footer > .discription-adapt > .btn {
+        width: 10px;
+        height: 10px;
+        background: red;
+     }
+}
+
+.container-btn {
+    max-width: 341px;
+    margin: 0 auto;
+    padding-top: 34px;
+}
+
+.container-btn > .btn {
+    display: inline-block;
+    height: 60px;
+    padding-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #7d7d7d;
+}
+
+.container-btn > .btn:hover {
+    background: #7d7d7d;
+    cursor: pointer;
+    color: #fff;
+}
+
+.container-btn > .btn:nth-child(1n) {
+    margin: 0 10px 20px 0;
+    width: 150px;
+    border: 3px solid #7d7d7d;
+}
+
+.container-btn > .btn:nth-child(-n+2) {
+    margin-bottom: 20px;
+    width: 150px;
+    height: 60px;
+}
+
+@media screen and (max-width:1200px){
+    .discription-adapt > .about-adapt > .about-ad-text {
+        display: none;
+    }
+    .about-adapt {
+        text-transform: uppercase;
+    }
+    .discription-adapt >.container-btn-adapt {
+        width: 100%;
+        max-width: 960px;
+    }
+    .discription-adapt >.container-btn-adapt:nth-child(2n+1) {
+        margin-bottom: 20px;
+    }
+    .container-btn-adapt > .container-in {
+        margin-top: 30px;
+    }
+    .container-in > .btn {
+        display: inline-block;
+        width: 88%;
+        color: #fff;
+        max-width: 120px;
+        padding: 20px 0 20px 20px;
+        font-size: 15px;
+        border: 3px solid #7d7d7d;
+        color: #7d7d7d;
+        font-weight: bold;
+    }
+    .btn:nth-child(-n+2) {
+        margin-bottom: 10px;
+        padding: 20px 0 20px 20px;
+        border: 3px solid #7d7d7d;
+        color: #7d7d7d;
+    }
+    .btn:nth-child(odd) {
+        margin-right: 10px;
+        vertical-align: top;
+        padding: 20px;
+        color: #7d7d7d;
+        padding-left: 15px;
+    }
+    .container-in > .btn:hover {
+        background: #7d7d7d;
+        color: #fff;
+    }
+}
+
+/*latest-post*/
+
+.latest-post {
+    width:100%;
+    text-align: left;
+    display: inline-block;
+    max-width: 452px;
+    margin: 0 50px 0 50px;
+    vertical-align: top;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.latest-post:nth-child(-n+2) {
+    margin-bottom: 41px;
+}
+
+.latest-post-try {
+    display: none;
+    width: auto;
+    text-align: center;
+    max-width: 459px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+@media screen and (max-width:1200px) {
+    .latest-post {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .latest-post-try {
+        display:block;
+        vertical-align: top;
+        width: auto;
+        max-width: 261px;
+        font-family: sans-serif;
+        padding-top: 40px;
+    }
+
+    .latest-post-try h2 {
+        margin-top: 0;
+        text-align: left;
+    }
+/*черные квадраты*/
+    .post-try {
+        max-width: 261px;
+        margin: 3px auto;
+        display: inline-block;
+        font-family: sans-serif;
+        color: #fff;
+        background-image: url("https://c.wallhere.com/photos/20/d5/leopard_aggression_teeth_face-1040223.jpg!d");
+        padding-top: 94px;
+        background-size: cover;
+    }
+
+    .post-try img {
+        width: 100%;
+    }
+
+    .text {
+        border: 0;
+        background:#000;
+        padding: 27px 20px;
+        margin-bottom: 0;
+    }
+
+    .text:hover {
+        background: #00000054;
+    }
+
+}
+
+
+.latest-post > .title {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+.latest-post > a .post1 {
+    display: inline-block;
+    width: 200px;
+    height: 154px;
+    background: red;
+    margin: 0px 23px 35px 0;
+    padding-top: 56px;
+}
+
+.latest-post > a .post1:nth-child(-n+2) {
+    margin-top: 2px;
+    background: green;
+    vertical-align: top;
+    background-image: url("https://c.wallhere.com/photos/20/d5/leopard_aggression_teeth_face-1040223.jpg!d");
+    background-size: cover;
+}
+
+a .post1 > .txt {
+    background: #000;
+    color: #fff;
+    padding: 31px 21px;
+}
+
+a .post1 > .txt:hover {
+    background: #00000078;
+}
+
+
+.latest-post > .container-post2 {
+    display: none;
+    width: auto;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.latest-post > .post2 {
+    display: none;
+    width: 400px;
+    height: 200px;
+    background: blue;
+}
+
+@media screen and (max-width:1110px) {
+    .latest-post {
+        width: 100%;
+        text-align: left;
+        max-width: 414px;
+        margin: 0 39px 0 50px;
+        vertical-align: top;
+        font-family: sans-serif;
+        text-transform: uppercase;
+    }
+
+    .latest-post > .title {
+        margin-bottom: 21px;
+    }
+    .latest-post > .post1 {
+        display: inline-block;
+        width: 200px;
+        height: 154px;
+        background: red;
+        margin: 11px 9px 0 0;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .latest-post > .post1 {
+        display: none;
+    }
+
+    .latest-post > .container-post2 {}
+
+    .latest-post > .container-post2 > .post2 {
+        display: block;
+        width: 100%;
+        background: green;
+        max-width: 700px;
+        height: 154px;
+        margin: 0 auto 20px;
+    }
+}
+
+.instagram {
+    vertical-align: top;
+    width: auto;
+    max-width: 230px;
+    display: inline-block;
+}
+
+.instagram h2 {
+    margin-top: 0;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 29px;
+    text-align: left;
+}
+.instagram > .close {
+    display: inline-block;
+    width: 115px;
+    height: 96px;
+    margin-bottom: -4px;
+    background-image: url("https://c.wallhere.com/photos/20/d5/leopard_aggression_teeth_face-1040223.jpg!d");
+    background-size: cover;
+}
+
+.instagram-adapt {
+    display: none;
+}
+
+@media screen and (max-width:1200px) {
+.instagram {
+        display: none;
+}
+
+.instagram-adapt {
+    max-width: 261px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 40px;
+  }
+
+ .instagram-adapt h2 {
+      margin-top: 0;
+      text-transform: uppercase;
+      text-align: left;
+  }
+}
+
+.instagram-adapt > .come  {
+    margin: 0 auto;
+    height: 163px;
+  }
+
+ .instagram-adapt > .come img {
+     width: 100%;
+ }
+}
+/*самый нижний черный footer*/
+/*footer*/
+
+.contact {
+    padding: 0;
+}
+.footer {
+    width: 100%;
+    height: 62px;
+    padding: 20px 20px 0;
+    background:#000000c7;
+}
+
+/*footer*/
+.footer > .footer-container {
+    width: auto;
+    max-width: 1152px;
+    margin: 0 auto;
+    padding: 3px 0 2px;
+}
+
+/*footer*/
+.footer > .footer-container > .copyright {
+    color: #8e8e8e;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    display: inline-block;
+}
+/*footer*/
+.footer > .footer-container > .designer {
+    color: #8e8e8e;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    float: right;
+    font-size: 15px;
+    padding-top: 1px;
+}
+/*footer*/
+@media screen and (max-width:503px) {
+    .footer > .footer-container > .copyright {
+        font-size: 12px;
+    }
+     .footer > .footer-container > .designer {
+         font-size: 12px;
+         padding-top: 4px;
+     }
+}
+
+
+
+/**/
