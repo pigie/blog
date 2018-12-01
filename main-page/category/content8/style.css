@@ -1,0 +1,603 @@
+body {
+    margin: 0;
+    font-size: 16px;
+    width: 100%;
+    background: #f8f8f8;
+}
+
+/*Не зыбывать про звездочку*/
+* {
+    box-sizing: border-box;
+}
+
+section {
+    width: 100%;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1303px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.menu {
+    display: inline-block;
+    float: right;
+    padding-top: 17px;
+}
+
+.container-adapt {
+    display: none;
+}
+
+
+@media screen and (max-width:600px) {
+    .container {
+        display: none;
+    }
+
+    .container-adapt {
+        display: block;
+    }
+}
+
+.categor {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    margin: 10px 21px;
+}
+
+.categor a {
+    color: #000;
+    text-decoration: none;
+}
+
+.categor a > .underline {
+    height: 5px;
+    background: red;
+}
+
+.about {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    margin: 10px 30px;
+    max-width: 345px;
+    color: #000;
+}
+
+.about a {
+    color: #000;
+}
+
+.about > .btn {
+    margin-top: 33px;
+}
+
+.contact {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.contact a {
+    color: #000;
+    text-decoration: none;
+}
+
+.subscribe {
+    display: inline-block;
+    font-family: sans-serif;
+    border: 3px solid;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 56px;
+}
+
+img {
+    width: 100%;
+    height: 600px;
+}
+
+
+.container-two{
+    max-width: 823px;
+    margin: 0 auto;
+}
+
+.container-two > .content {
+    margin: -365px auto 0;
+    color: #fff;
+}
+
+
+.content > .title {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    background: #fff;
+    padding: 10px 20px;
+    color: #000;
+}
+
+
+.content > .txt {
+    display: inline-block;
+    max-width: 747px;
+    width: 100%;
+    background: #00000054;
+    padding: 41px;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.content > .txt > .date {
+    color: #fff;
+}
+.content > .txt > .title {
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.content > .txt > .title-ad {
+    display: none;
+}
+
+@media screen and (max-width:660px) {
+    .content > .txt > .title {
+        font-size: 35px;
+    }
+}
+
+.inform {
+    display: inline-block;
+    background: #fff;
+    position: relative;
+    max-width: 747px;
+    width: 100%;
+    padding: 50px 0 0 0px;
+}
+
+
+.one {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.inform > .sub-title {
+    display: inline-block;
+    font-size: 28px;
+    font-family: sans-serif;
+    color: #000;
+    padding-left: 50px;
+}
+
+@media screen and (max-width:600px) {
+    .inform > .sub-title {
+        font-size: 35px;
+    }
+}
+
+.txt {
+    color: #000;
+    padding-left: 99px;
+    padding-top: 37px;
+}
+
+.sub-title-ad {
+    display: none;
+}
+
+@media screen and (max-width:660px) {
+
+}
+
+.sub-title > .number {
+    display: inline-block;
+    margin-right: 25px;
+    color: #000;
+}
+
+.inform img {
+    margin: 44px 0 51px;
+}
+
+
+/*====================================================*/
+
+.sub-title2 {
+    color: #000;
+    font-family: sans-serif;
+    font-size: 28px;
+    padding-left: 51px;
+}
+
+.sub-title2 > .two {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+p {
+    color: #000;
+    padding-left: 97px;
+    margin-top: 40px;
+}
+
+.black {
+    font-weight: bold;
+}
+
+.black::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    max-width: 75px;
+    height: 3px;
+    background: #000;
+    margin-left: -97px;
+    margin-top: 8px;
+}
+
+
+.sub-title3 {
+    color:#000;
+    font-family: sans-serif;
+    font-size: 28px;
+    padding-left: 50px;
+}
+
+.sub-title3 > .three {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social-btn {
+    width: 100%;
+    max-width: 816px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.social-btn > .title {
+    display: inline-block;
+    padding-right: 78px;
+}
+
+.social-btn > .facebook {
+    display: inline-block;
+    border: 3px solid;
+    padding: 23px 35px;
+    font-weight: bold;
+}
+
+.social-btn > .twitter {
+    display: inline-block;
+    border: 3px solid;
+    padding: 23px 35px;
+    font-weight: bold;
+}
+
+.social-btn > .googleplus {
+    display: inline-block;
+    border: 3px solid;
+    padding: 23px 35px;
+    font-weight: bold;
+}
+
+
+.social-btn-adapt {
+    display: none;
+}
+
+@media screen and (max-width:1000px) {
+    .social-btn {
+        display: none;
+    }
+
+    .social-btn-adapt {
+        display: block;
+    }
+
+    .social-btn-adapt > .title {
+        font-family: sans-serif;
+        display: block;
+        text-transform: uppercase;
+        max-width: 300px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .social-btn-adapt > .facebook-ad {
+        border: 3px solid;
+        padding: 23px 35px;
+        font-weight: bold;
+        font-family: sans-serif;
+        max-width: 500px;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 20px auto 20px;
+    }
+
+    .social-btn-adapt > .twitter-ad {
+        border: 3px solid;
+        padding: 23px 35px;
+        font-weight: bold;
+        font-family: sans-serif;
+        max-width: 500px;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 20px auto 20px;
+    }
+
+    .social-btn-adapt > .googleplus-ad {
+        border: 3px solid;
+        padding: 23px 35px;
+        font-weight: bold;
+        font-family: sans-serif;
+        max-width: 500px;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 20px auto 20px;
+    }
+}
+
+.container-link {
+    max-width: 1150px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 0 40px;
+}
+
+
+.about > .btn > .facebook {
+    display: inline-block;
+    border: 2px solid;
+    padding: 20px;
+    margin-right: 26px;
+}
+
+.about > .btn > .twitter {
+    display: inline-block;
+    border: 2px solid;
+    padding: 20px;
+}
+
+.about > .btn > .instagram {
+    display: inline-block;
+    border: 2px solid;
+    padding: 20px;
+    margin: 20px 20px 0px 0;
+}
+
+.about > .btn > .tumbler {
+    display: inline-block;
+    border: 2px solid;
+    padding: 20px;
+}
+a {
+    text-decoration: none;
+}
+
+a .link {
+    display: inline-block;
+    max-width: 350px;
+    background: red;
+    margin-left: 20px;
+    padding-top: 96px;
+    text-decoration: none;
+    text-align: left;
+}
+
+a .link > .inscription {
+    font-family: sans-serif;
+    padding: 51px 20px;
+    font-size: 22px;
+    background: #000;
+    color: #fff;
+    padding: 20px 20px;
+}
+
+@media screen and (max-width:1200px) {
+    a .link {
+        max-width: 300px;
+    }
+}
+
+
+@media screen and (max-width:1100px) {
+    a .link {
+        display: block;
+        margin: 0 auto 20px;
+        text-decoration: none;
+    }
+
+    a .link > .inscription {
+        text-decoration: none;
+    }
+}
+
+.container-inform {
+    max-width: 1203px;
+    margin: 0 auto;
+}
+
+
+.container-inform > .latest-post {
+    display: inline-block;
+    font-family: sans-serif;
+    vertical-align: top;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0 50px;
+    max-width: 560px;
+    width: 100%;
+}
+
+.latest-post > a .link {
+    max-width: 198px;
+    background-image: url("https://www.desktopbackground.org/p/2010/07/06/43906_tuscany-landscape-4k-ultra-hd-wallpapers-4k-wallpapers-net_2560x1600_h.jpg");
+    padding-top: 79px;
+    margin-right: 29px;
+}
+
+.latest-post > a .link:nth-child(odd) {
+    margin-left: 0;
+    margin-bottom: 35px;
+}
+
+a .link > .inscriptions {
+    background: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+
+
+a .link > .inscriptions:nth-child(odd) {
+    margin-left: 0;
+}
+
+.container-inform > .instagram {
+    vertical-align: top;
+    font-family: sans-serif;
+    margin-left: 20px;
+    max-width: 211px;
+    display: inline-block;
+}
+
+.instagram h2 {
+    text-transform: uppercase;
+}
+
+
+.instagram > .images img {
+    width: 100px;
+    height: auto;
+    margin-bottom: -5px;
+    margin-left: -5px;
+}
+
+.instagram > .images img:nth-child(odd) {
+    margin-right: 0;
+}
+.instagram-adapt {
+    display: none;
+}
+
+.images-adapt {
+    display: none;
+}
+
+@media screen and (max-width:1400px) {
+    .about {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .container-inform > .latest-post {
+        display: block;
+        margin: 0 auto;
+        max-width: 450px;
+    }
+
+    .container-inform > .instagram {
+        display: none;
+        margin: 0 auto;
+    }
+
+    .instagram-adapt {
+        display: block;
+        max-width: 343px;
+        margin: 0 auto;
+    }
+
+    .instagram-adapt h2 {
+        text-transform: uppercase;
+        font-family: sans-serif;
+    }
+
+    .images-adapt {
+        display: block;
+        max-width: 233px;
+        margin: 0 auto;
+        margin-left: 0;
+    }
+
+    .images-adapt img {
+        width: 100%;
+        height: 100px;
+        max-width: 114px;
+        margin-right: -4px;
+        margin-bottom: -4px;
+    }
+}
+
+.lie {
+    margin: 0;
+    height: 3px;
+    width: 100%;
+    background: #0060ff;
+    margin-bottom: -1px;
+}
+
+.footer {
+    background: #000;
+    width: 100%;
+    height: 60px;
+}
+
+.footer-container {
+    max-width: 1253px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    padding-top: 26px;
+}
+
+
+ .copyright {
+    color: #ffffff7a;
+    display: inline-block;
+}
+
+.designer {
+    float: right;
+    color: #fff;
+}
+
+.designed {
+    color: #ffffff7a;
+}
+
+
+
+
+
+
+
+
+
+
+
+/**/

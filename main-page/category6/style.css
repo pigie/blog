@@ -1,0 +1,658 @@
+body {
+    margin: 0;
+    font-size: 16px;
+    width: 100%;
+}
+
+/*Не зыбывать про звездочку*/
+* {
+    box-sizing: border-box;
+}
+
+section {
+    width: 100%;
+    padding: 20px;
+}
+
+.sect-up {
+    padding-top: 40px;
+}
+
+.container {
+    width: auto;
+    max-width: 1303px;
+    margin: 0 auto;
+}
+
+/*Popup*/ /* 1 окно*/
+.open {
+    cursor: pointer
+}
+.modal {
+    position: absolute;
+    margin-left: -250px;
+    left: 50%;
+    top: -100%;
+    padding: 20px;
+    border: 1px solid #333;
+    z-index: 9999;
+    transition: all 0.5s ease-in;
+    background: #fff;
+}
+.overflow {
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+    background:#000;
+    position: absolute;
+    top: 118px;
+}
+
+
+.container > .content-left {
+    display: inline-block;
+    font-size: 50px;
+}
+
+.container > .content-left > a .logo {
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: bold;
+    color:#000;
+}
+
+.container > .content-right {
+    text-align: right;
+    display: inline-block;
+    float: right;
+    margin-top: 9px;
+}
+
+ .menu {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 15px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 62px;
+}
+
+.menu li:nth-child(1) {
+    border-bottom: 2px solid #000;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.menu li a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+/*==================== modal subscribe ==========================*/
+
+.button {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+span {
+    cursor: pointer;
+    display: inline-block;
+    border:2px solid #000;
+    padding: 13px 16px 12px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+span:hover {
+    cursor: pointer;
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    border:2px solid #000;
+    padding: 13px 16px 12px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+/*================== ================================*/
+/*модальное окно*/
+#modalWindow {
+    position: absolute;
+    left:0;
+    top:0;
+    background: #000;
+    width: 100%;
+    display: none;
+    pointer-events: none;
+}
+
+#modalWindow:target {
+    pointer-events: auto;
+    display: block;
+    margin-top: 115px;
+    z-index: 999999;
+}
+
+.window {
+    max-width: 726px;
+    border-radius: 5px;
+    margin: 1% auto;
+    padding: 10px;
+    text-align: center;
+    padding-top: 54px;
+    color: #fff;
+}
+
+.closed {
+    position: absolute;
+    right: 5%;
+    top:5%;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+}
+
+a .one-category {
+    display: inline-block;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 15px;
+    margin: 10px 50px 50px;
+    font-size: 15px;
+}
+
+a .one-category:hover {
+    background: #fff;
+    color:#000;
+}
+
+
+/**/
+.container-two {
+    display: none;
+}
+
+/*меню*/
+@media screen and (max-width:960px) {
+    .container {
+        display: none;
+    }
+    .container-two {
+        display: block;
+    }
+
+ .fas-fa-bars::before {
+        content: "\f0c9";
+        font-family: FontAwesome;
+        width: 20px;
+        height: 20px;
+        font-style: normal;
+        color: #000;
+    }
+
+    #modalWindow2 {
+        position: absolute;
+        left:0;
+        top:0;
+        background: #000;
+        width: 100%;
+        display: none;
+        pointer-events: none;
+    }
+
+    #modalWindow2:target {
+        pointer-events: auto;
+        display: block;
+        margin-top: 47px;
+        z-index: 999999;
+        font-family: sans-serif;
+    }
+
+    .fas-fa-bars::before {
+        content: "\f0c9";
+        font-family: FontAwesome;
+        font-style: normal;
+        color: #000;
+    }
+
+    .window2 {
+        max-width: 726px;
+        border-radius: 5px;
+        margin: 1% auto;
+        padding: 10px;
+        text-align: center;
+        padding-top: 54px;
+        color: #fff;
+    }
+
+    .column {
+        display: inline-block;
+        width: 150px;
+    }
+
+    a .cat {
+        border: 1px solid #fff;
+        color: #fff;
+        display: inline-block;
+        padding: 10px;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        font-size: 15px;
+        margin-bottom: 50px;
+    }
+
+    .closed2 {
+        position: absolute;
+        right: 5%;
+        top:5%;
+        background: #fff;
+        color: #000;
+        text-decoration: none;
+        padding: 10px;
+    }
+}
+
+/*container-two*/
+#box {
+    display: block;
+    max-width: 107px;
+    background: #00000024;
+    padding: 6px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.m_PageScroll2id {
+    width: 10px;
+    height: 10px;
+    background: red;
+}
+
+
+
+.categories {
+    font-family: sans-serif;
+    padding: 20px 0;
+    border-top:2px solid #000;
+    border-bottom: 2px solid #000;
+    color: #000;
+}
+
+.about {
+    font-family: sans-serif;
+    padding: 20px 0;
+    border-bottom: 2px solid #000;
+    color: #000;
+}
+
+.contacts {
+    font-family: sans-serif;
+    padding: 20px 0;
+    border-bottom: 2px solid #000;
+    color: #000;
+}
+
+
+.title {
+    background: #000;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.mesh {
+    text-align: center;
+}
+
+.mesh a {
+    margin: 0 61px;
+    text-decoration: none;
+}
+
+.mesh > .range > a .code{
+    text-decoration: none;
+    margin-bottom: 50px;
+}
+a .code {
+    display: inline-block;
+    width: 350px;
+    background: green;
+    text-align: left;
+    vertical-align: top;
+}
+
+
+a .code > .category {
+    background: #fff;
+    font-family: sans-serif;
+    display: inline-block;
+    padding: 13px;
+    text-transform: uppercase;
+    margin-top: 95px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+}
+
+a .code > .inscription {
+    background: #000;
+    color: #fff;
+    padding: 20px 20px;
+}
+
+a .code > .inscription:hover {
+    background: #00000073;
+}
+
+.inscription > .name {
+    padding: 20px;
+}
+
+
+@media screen and (max-width:1500px) {
+    .mesh a {
+        margin: 0 30px;
+    }
+    a .code {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .mesh a {
+        margin: 0 45px;
+    }
+    a .code {
+        width: 258px;
+        background: red;
+    }
+}
+@media screen and (max-width:1100px) {
+    .mesh a {
+        display: block;
+        margin: 0 22px 50px;
+    }
+    a .code {
+        background: gray;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:1000px) {
+    .mesh a {
+        display: block;
+    }
+}
+
+.load {
+    width: 100%;
+    max-width: 358px;
+    margin: 50px auto 0;
+    padding: 23px 50px;
+    border: 3px solid;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.load:hover {
+    background: #000;
+    color: #fff;
+    border: 3px solid #000;
+    transition: 0.3s;
+}
+
+hr {
+    margin-top: 75px;
+}
+
+.footer-info {
+    max-width: 1315px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.about-info {
+    display: inline-block;
+    max-width: 328px;
+    margin: 0 60px;
+}
+
+.about-info h2 {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.txt {
+    margin: 30px 0 30px;
+}
+/*links*/
+.btn {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+ .btn a {
+    border: 3px solid #000;
+    display: inline-block;
+    padding: 20px;
+    margin-right: 40px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #000;
+}
+
+ .btn a:nth-child(even) {
+    margin: 0 0 20px -4px;
+}
+
+ .btn a:hover {
+    background: #000;
+    color: #fff;
+}
+/**/
+.latest-post {
+    display: inline-block;
+    width: 400px;
+    margin: 0 87px;
+    vertical-align: top;
+}
+.latest-post h2 {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.latest-post > .links {
+
+}
+
+.links > a .link {
+    width: 164px;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    background-image: url("https://img.fonwall.ru/o/60/listya-eyfeleva-bashnya-parij.jpg?route=mid&amp;h=750");
+}
+
+.links > a .link:nth-child(odd) {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+a .link > .inscription {
+    margin-top: 77px;
+    background: #000;
+    color: #fff;
+    padding: 24px 22px;
+}
+
+a .link > .inscription:hover {
+    background: #0000007d;
+}
+.instagram {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.instagram h2 {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.container-img {
+    width: 254px;
+}
+
+.container-img > .img {
+    background: green;
+    width: 125px;
+    height: 95px;
+    display: inline-block;
+    margin-bottom: -4px;
+}
+
+
+
+@media screen and (max-width:1300px) {
+    .latest-post {
+        margin: 0px 41px;
+        margin-left: 33px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .about-info {
+        display: block;
+        margin: 0 auto;
+        max-width: 402px;
+    }
+
+    .about-info h2 {
+        font-size: 35px;
+    }
+
+    .latest-post {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .latest-post h2 {
+        text-transform: uppercase;
+        font-family: sans-serif;
+        font-size: 35px;
+    }
+
+    .instagram {
+        display: block;
+        margin: 0 auto;
+        max-width: 400px;
+    }
+    .instagram h2 {
+        font-size: 35px;
+    }
+
+    .container-img {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .container-img > .img {
+        width: 162px;
+        height: 116px;
+    }
+}
+
+/*самый нижний черный footer*/
+/*footer*/
+.contact {
+    background: red;
+    padding: 0;
+}
+
+
+
+/**/
+/*самый нижний черный footer*/
+.footer-down {
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+}
+.footer {
+    width: auto;
+    height: 58px;
+    background:#000;
+    padding: 0 20px;
+    border-bottom: 1px solid #0b51c4;
+    border-top: 1px solid #0b51c4;
+}
+/*footer*/
+.footer > .footer-container {
+    width: auto;
+    max-width: 1152px;
+    margin: 0 auto;
+}
+
+/*footer*/
+.footer > .footer-container > .copyright {
+    color: #8e8e8e;
+    font-family: sans-serif;
+    float: left;
+    padding: 23px 0 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+/*footer*/
+.footer > .footer-container > .designer {
+    color: #8e8e8e;
+    font-family: sans-serif;
+    padding:23px 0 10px;
+    text-transform: uppercase;
+    float: right;
+    font-size: 15px;
+}
+/*footer*/
+@media screen and (max-width:503px) {
+    .footer > .footer-container > .copyright {
+        font-size: 12px;
+    }
+     .footer > .footer-container > .designer {
+         font-size: 12px;
+     }
+}
+
+
+/**/

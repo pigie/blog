@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+ <title>Main Page</title>
+<link rel="stylesheet" href="style.css">
+<link href="http://allfont.ru/allfont.css?fonts=varela-round" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+          <div class="content-left"><div class="logo">Map</div></div>
+            <div class="content-right">
+             <div class="menu">
+                 <!--popup -->
+            <li class="category">
+                <a href="#modalWindow" class="button">category</a>
+                <div id="modalWindow">
+                    <div class="window">
+                     <a href="category\index.html">
+                        <div class="one-category">science</div>
+                    </a>
+                    <a href="category2\index.html">
+                       <div class="two-category">Films</div>
+                   </a>
+                   <a href="category3\index.html">
+                      <div class="one-category">News</div>
+                  </a>
+                        <br>
+                        <a href="category4\index.html">
+                           <div class="one-category">History</div>
+                       </a>
+                       <a href="category5\index.html">
+                          <div class="one-category">programming</div>
+                      </a>
+                      <a href="category6\index.html">
+                         <div class="one-category">Weapon</div>
+                     </a>
+                        <br>
+                        <a href="category7\index.html">
+                           <div class="one-category">Fails</div>
+                       </a>
+                       <a href="category8\index.html">
+                          <div class="one-category">music</div>
+                      </a>
+                      <a href="category9\index.html">
+                         <div class="one-category">lock picking</div>
+                     </a>
+                    </div>
+                    <a href="#close" class="closed">X</a>
+                </div>
+            </li>
+            <style>
+                #modalWindow {
+                    position: absolute;
+                    left:0;
+                    top:0;
+                    background: #000;
+                    width: 100%;
+                    display: none;
+                    pointer-events: none;
+                }
+
+                #modalWindow:target {
+                    pointer-events: auto;
+                    display: block;
+                    margin-top: 91px;
+                    z-index: 999999;
+                }
+
+                .window {
+                    max-width: 726px;
+                    border-radius: 5px;
+                    margin: 1% auto;
+                    padding: 10px;
+                    text-align: center;
+                    padding-top: 54px;
+                    color: #fff;
+                }
+
+                .closed {
+                    position: absolute;
+                    right: 5%;
+                    top:5%;
+                    background: #fff;
+                    color: #000;
+                    text-decoration: none;
+                    padding: 10px;
+                }
+
+                a .one-category {
+                    display: inline-block;
+                    border: 2px solid #fff;
+                    color: #fff;
+                    padding: 15px;
+                    margin: 10px 50px 50px;
+                    font-size: 15px;
+                }
+
+                a .one-category:hover {
+                    background: #fff;
+                    color:#000;
+                }
+
+                a .two-category {
+                    display: inline-block;
+                    border: 2px solid #fff;
+                    color: #fff;
+                    padding: 15px;
+                    margin: 10px 50px 50px;
+                    font-size: 15px;
+                }
+
+                a .two-category:hover {
+                    background: #fff;
+                    color:#000;
+                }
+
+
+            </style>
+
+
+
+            <!-- -->
+        <li class="blog"><a href="../about/index.html">about</a></li>
+        <li><a href="../contacts/index.html">contact</a></li>
+    </div>
+<!-- Доделать Pupup -->
+        <span onclick="openWin();">subscribe</span>
+
+<div class="modal">
+   <h1>He seemed denote except as oppose do spring my!</h1>
+     <input type="text"></input><br>
+  <div class="button">fdfd</div>
+       </div>
+    </div>
+</div>
+<script type="text/javascript">
+        var modal = document.querySelector('.modal');
+        var overflow = document.createElement('div');
+        function openWin() {
+        overflow.className = "overflow";
+        document.body.appendChild(overflow);
+        var height = modal.offsetHeight;
+        modal.style.marginTop = - height / 4 + "px";
+        modal.style.top = "176px";
+}
+
+if (!Element.prototype.remove) {
+        Element.prototype.remove = function remove() {
+                if (this.parentNode) {
+                        this.parentNode.removeChild(this);
+                }
+        };
+}
+
+overflow.onclick = function () {
+    modal.style.top = "-100%";
+    overflow.remove();
+}
+        </script>
+
+<!-- ================================================================================== -->
+<div class="container-two">
+    <a href="#modalWindow2" class="button">
+        <i class="fas-fa-bars"></i>
+    </a>
+    <div id="modalWindow2">
+        <div class="window2">
+         <div class="column">
+        <a href="#">
+          <div class="cat">category</div>
+      </a>
+      <a href="#">
+        <div class="cat">category</div>
+    </a>
+    <a href="#">
+      <div class="cat">category</div>
+  </a>
+         </div>
+
+         <div class="column">
+             <a href="#">
+               <div class="cat">category</div>
+           </a>
+           <a href="#">
+             <div class="cat">category</div>
+         </a>
+         <a href="#">
+           <div class="cat">category</div>
+       </a>
+         </div>
+
+         <div class="column">
+             <a href="#">
+               <div class="cat">category</div>
+           </a>
+           <a href="#">
+             <div class="cat">category</div>
+         </a>
+         <a href="#">
+           <div class="cat">category</div>
+       </a>
+         </div>
+        </div>
+        <a href="#close2" class="closed2">X</a>
+    </div>
+    <style>
+    #modalWindow2 {
+        position: absolute;
+        left:0;
+        top:0;
+        background: #000;
+        width: 100%;
+        display: none;
+        pointer-events: none;
+    }
+
+    #modalWindow2:target {
+        pointer-events: auto;
+        display: block;
+        margin-top: 47px;
+        z-index: 999999;
+        font-family: sans-serif;
+    }
+
+    .fas-fa-bars::before {
+        content: "\f0c9";
+        font-family: FontAwesome;
+        font-style: normal;
+        color: #000;
+    }
+
+    .window2 {
+        max-width: 726px;
+        border-radius: 5px;
+        margin: 1% auto;
+        padding: 10px;
+        text-align: center;
+        padding-top: 54px;
+        color: #fff;
+    }
+
+    .column {
+        display: inline-block;
+        width: 150px;
+    }
+
+    a .cat {
+        border: 1px solid #fff;
+        color: #fff;
+        display: inline-block;
+        padding: 10px;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        font-size: 15px;
+        margin-bottom: 50px;
+    }
+
+    .closed2 {
+        position: absolute;
+        right: 5%;
+        top:5%;
+        background: #fff;
+        color: #000;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+    </style>
+</div>
+    </section>
+
+<!-- mesh -->
+<section>
+    <!-- 1 ряд -->
+    <div class="container-free clearfix">
+<a href="article\index.html"><div class="free"><div class="inscription"><div class="title">category</div>
+     <div class="txt"><div class="date">May 21,2016</div>
+          <div class="lines">
+              <div class="line">Folly words widow one</div>
+             <div class="line">downs few age every seven.</div>
+        </div>
+      </div>
+    </div>
+ </div>
+</a>
+ <div class="contf">
+  <a href="article\index.html">
+    <img src="https://fullhdpictures.com/wp-content/uploads/2015/11/Eiffel-Tower-Wallpaper-HD.jpg" alt="fdfdf">
+     <div class="category">category</div>
+    <span class="hello">Folly words widow one downs few age every seven.</span>
+</a>
+ </div>
+ <div class="contf">
+     <a href="article2\index.html">
+    <img src="https://fullhdpictures.com/wp-content/uploads/2015/11/Eiffel-Tower-Wallpaper-HD.jpg" alt="">
+        <div class="category">category</div>
+    <span class="hello">Folly words widow one downs few age every seven.</span>
+</a>
+ </div>
+ <div class="contf">
+  <a href="article3\index.html">
+    <img src="https://fullhdpictures.com/wp-content/uploads/2015/11/Eiffel-Tower-Wallpaper-HD.jpg" alt="">
+        <div class="category">category</div>
+    <span class="hello">Folly words widow one downs few age every seven.</span>
+</a>
+ </div>
+
+<div class="container-right">
+<a href="article2\index.html">
+ <div class="free2">
+     <div class="inscription">
+         <div class="title">category</div>
+        <div class="txt">
+          <div class="date2">May 21,2016</div>
+            <div class="line">He seemed denote except as</div>
+            <div class="line">oppose do spring my</div>
+        </div>
+     </div>
+ </div>
+</a>
+<a href="article3\index.html">
+ <div class="free3">
+     <div class="inscription">
+         <div class="title">category</div>
+        <div class="txt">
+          <div class="date3">May 21,2016</div>
+            <div class="line">He seemed denote except as</div>
+            <div class="line">oppose do spring my</div>
+     </div>
+ </div>
+ </div>
+</a>
+ <div class="container-right-adapt">
+
+ </div>
+ <!-- mesh ad-->
+ <div class="contf"></div>
+ <div class="contf"></div>
+ <div class="contf"></div>
+ <div class="categor"></div>
+ </div>
+</section>
+<!-- конец 1-го ряда -->
+<!-- 1 range сетки -->
+<section>
+ <div class="cont">
+ <a href="article4\index.html">
+    <div class="category">category</div>
+  <div class="title">
+     <div class="date">21,2016</div>
+     <div class="inscription">Between any may mention evening age shortly can ability regular</div>
+  </div>
+</a>
+ <a href="article5\index.html">
+    <div class="category">category</div>
+    <div class="title">
+       <div class="date">21,2016</div>
+       <div class="inscription">Between any may mention evening age shortly can ability regular</div>
+    </div>
+</a>
+ <a href="article6\index.html">
+    <div class="category">category</div>
+    <div class="title">
+       <div class="date">21,2016</div>
+       <div class="inscription">Between any may mention evening age shortly can ability regular</div>
+    </div>
+</a>
+</div>
+<div class="cont-ad">
+    <a href="#">
+      <img src="https://c.wallhere.com/photos/20/d5/leopard_aggression_teeth_face-1040223.jpg!d" alt="">
+    <span class="hello-ad"> Folly words widow one downs few age every seven.</span>
+</a>
+</div>
+</section>
+<!-- 2 range-->
+<section>
+  <div class="cont2">
+<a href="article7\index.html">
+      <div class="hello2">
+          <div class="category">category</div>
+          <div class="title">
+               <div class="date">21,2016</div>
+             <div class="inscription">Between any may mention evening age shortly can ability regular</div>
+          </div>
+      </div>
+  </a>
+  <a href="article8\index.html">
+      <div class="hello3">
+          <div class="category">category</div>
+      <div class="title">
+           <div class="date">21,2016</div>
+         <div class="inscription">Between any may mention evening age shortly can ability regular</div>
+      </div></div>
+  </a>
+  <a href="article9\index.html">
+      <div class="hello2">
+          <div class="category">category</div>
+      <div class="title">
+           <div class="date">21,2016</div>
+         <div class="inscription">Between any may mention evening age shortly can ability regular</div>
+      </div></div>
+  </a>
+  </div>
+
+  <div class="cont-ad2">
+      <div class="hello-ad2"></div>
+      <div class="hello-ad2"></div>
+      <div class="hello-ad2"></div>
+  </div>
+</section>
+
+<!-- 3 range-->
+<section>
+    <div class="cont3">
+     <a href="article4\index.html">
+        <div class="hello3">
+            <div class="category">category</div>
+            <div class="title">
+                 <div class="date">21,2016</div>
+               <div class="inscription">Between any may mention evening age shortly can ability regular</div>
+            </div>
+        </div>
+    </a>
+     <a href="article5\index.html">
+        <div class="hello3">
+            <div class="category">category</div>
+            <div class="title">
+                 <div class="date">21,2016</div>
+               <div class="inscription">Between any may mention evening age shortly can ability regular</div>
+            </div>
+        </div>
+    </a>
+     <a href="article6\index.html">
+        <div class="hello3">
+            <div class="category">category</div>
+            <div class="title">
+                 <div class="date">21,2016</div>
+               <div class="inscription">Between any may mention evening age shortly can ability regular</div>
+            </div>
+        </div>
+    </a>
+    </div>
+    </div>
+    <div class="cont-ad3">
+        <a href="article7\index.html">
+           <div class="hello3">
+               <div class="category">category</div>
+               <div class="title">
+                    <div class="date">21,2016</div>
+                  <div class="inscription">Between any may mention evening age shortly can ability regular</div>
+               </div>
+           </div>
+       </a>
+    </div>
+</section>
+
+<section>
+    <div class="cont4"><a href="article7\index.html">
+        <div class="hello4">
+            <div class="category">category</div>
+            <div class="title">
+                 <div class="date">21,2016</div>
+               <div class="inscription">Between any may mention evening age shortly can ability regular</div>
+            </div>
+        </div></a><a href="article8\index.html">
+        <div class="hello4">
+            <div class="category">category</div>
+            <div class="title">
+                 <div class="date">21,2016</div>
+               <div class="inscription">Between any may mention evening age shortly can ability regular</div>
+            </div>
+        </div>
+    </a><a href="article9\index.html">
+        <div class="hello4">
+            <div class="category">category</div>
+            <div class="title">
+                 <div class="date">21,2016</div>
+               <div class="inscription">Between any may mention evening age shortly can ability regular</div>
+            </div>
+        </div>
+    </a>
+    </div>
+
+
+    <div class="cont5"><a href="article10\index.html">
+        <div class="hello5">
+            <div class="category">category</div>
+            <div class="title">
+                 <div class="date">21,2016</div>
+               <div class="inscription">Between any may mention evening age shortly can ability regular</div>
+            </div>
+        </div></a><a href="article11\index.html">
+        <div class="hello5">
+            <div class="category">category</div>
+            <div class="title">
+                 <div class="date">21,2016</div>
+               <div class="inscription">Between any may mention evening age shortly can ability regular</div>
+            </div>
+        </div>
+    </a><a href="article12\index.html">
+        <div class="hello5">
+            <div class="category">category</div>
+            <div class="title">
+                 <div class="date">21,2016</div>
+               <div class="inscription">Between any may mention evening age shortly can ability regular</div>
+            </div>
+        </div>
+    </a>
+    </div>
+    <div class="cont-ad5">
+     <a href="#"><div class="hello-ad5"></div></a>
+    <a href="#"><div class="hello-ad5"></div></a>
+   <a href="#"><div class="hello-ad5"></div></a>
+    </div>
+
+</section>
+
+<section>
+    <div class="cont6"><a href="article13\index.html">
+        <div class="hello6">
+            <div class="category">category</div>
+            <div class="title">
+                 <div class="date">21,2016</div>
+               <div class="inscription">Between any may mention evening age shortly can ability regular</div>
+            </div>
+        </div></a><a href="article14\index.html">
+        <div class="hello6">
+            <div class="category">category</div>
+            <div class="title">
+                 <div class="date">21,2016</div>
+               <div class="inscription">Between any may mention evening age shortly can ability regular</div>
+            </div>
+        </div>
+    </a><a href="article15\index.html">
+        <div class="hello6">
+            <div class="category">category</div>
+            <div class="title">
+                 <div class="date">21,2016</div>
+               <div class="inscription">Between any may mention evening age shortly can ability regular</div>
+            </div>
+        </div>
+    </a>
+    </div>
+    <div class="cont-ad6">
+     <a href="#"><div class="hello-ad6"></div></a>
+    <a href="#"><div class="hello-ad6"></div></a>
+   <a href="#"><div class="hello-ad6"></div></a>
+    </div>
+</section>
+
+
+
+<section class="load">
+    <div class="btn-load">load more</div>
+</section>
+<hr>
+        <section class="footer-info">
+         <div class="container-footer">
+            <div class="description">
+                <div class="title">About</div>
+                 <div class="title-two">dfdsmfkdsm </div>
+                 <div class="text">
+                     Breakfast procuring nay end happiness
+                     allowance assurance frankness. Met simplicity
+                     Breakfast procuring nay end happiness
+                     allowance assurance frankness. Met simplicity
+                     Breakfast procuring nay end happiness
+                     allowance assurance frankness. Met simplicity
+                     Breakfast procuring nay end happiness
+                     allowance assurance frankness. Met simplicity
+                 </div>
+              <div class="container-btn">
+                  <div class="btn">facebook</div><div class="btn">twitter</div><div class="btn">instagram</div><div class="btn">tumblr</div>
+              </div>
+            </div>
+
+    <div class="discription-adapt">
+        <div class="div1">
+            <h2>About</h2>
+         <div class="div1-text">
+           <div class="line">Breakfast procuring nay end happiness</div>
+          <div class="line"> allowance assurance frank</div>
+            <div class="line">Breakfast procuring nay end happiness</div>
+         <div class="line"> allowance assurance frank</div>
+           <div class="line">Breakfast procuring nay end happiness</div>
+        <div class="line"> allowance assurance frank</div>
+             <div class="line"> Breakfast procuring nay end happiness</div>
+        <div class="line"> allowance assurance frank</div>
+             </div>
+             </div>
+        <!-- Adatn - About - при адаптиве -->
+     <div class="container-btn-adapt">
+         <div class="line"> Breakfast procuring nay end happiness allowance assurance frank</div>
+             <div class="line"> Breakfast procuring nay end happiness allowance assurance frank</div>
+         <div class="line"> Breakfast procuring nay end happiness allowance assurance frank</div>
+        <div class="line"> Breakfast procuring nay end happiness allowance assurance frank</div>
+    <div class="container-in">
+        <a href="#"><div class="btn">facebook</div></a>
+        <a href="#"><div class="btn">twitter</div></a>
+        <a href="#"><div class="btn">instagram</div></a>
+        <a href="#"><div class="btn">tumbler</div></a>
+    </div>
+        </div>
+         <div class="container-div1">
+            <div class="div1"></div>
+            <div class="div1"></div>
+            <div class="div1"></div>
+            <div class="div1"></div>
+        </div>
+        </div>
+        <div class="latest-post">
+            <div class="title">latest post</div>
+        <a href="#">
+          <div class="post1">
+            <div class="inscription">
+                fkdlkfd;lsfkldfk<br>
+                kfdkfl;sflf;ls;fsk<br>
+            </div>
+          </div>
+      </a>
+      <a href="#">
+        <div class="post1">
+          <div class="inscription">
+              fkdlkfd;lsfkldfk<br>
+              kfdkfl;sflf;ls;fsk<br>
+          </div>
+        </div>
+    </a>
+    <a href="#">
+      <div class="post1">
+        <div class="inscription">
+            fkdlkfd;lsfkldfk<br>
+            kfdkfl;sflf;ls;fsk<br>
+        </div>
+      </div>
+  </a>
+  <a href="#">
+    <div class="post1">
+      <div class="inscription">
+          fkdlkfd;lsfkldfk<br>
+          kfdkfl;sflf;ls;fsk<br>
+      </div>
+    </div>
+</a>
+    <div class="container-post2">
+         <div class="post2">Folly words widow one downs few age every seven copy 2</div>
+         <div class="post2">Folly words widow one downs few age every seven copy 2</div>
+         <div class="post2">Folly words widow one downs few age every seven copy 2</div>
+        <div class="post2">Folly words widow one downs few age every seven copy 2</div>
+    </div>
+</div>
+
+<div class="latest-post-try">
+    <h2>LATEST POST</h2>
+     <a href="#">
+        <div class="post-try"><p>Folly words widow one downs few age every seven copy 2</p></div>
+    </a>
+    <a href="#">
+        <div class="post-try"><p>Folly words widow one downs few age every seven copy 2</p></div>
+    </a>
+     <a href="#">
+        <div class="post-try"><p>Folly words widow one downs few age every seven copy 2</p></div>
+    </a>
+     <a href="#">
+        <div class="post-try"><p>Folly words widow one downs few age every seven copy 2</p></div>
+    </a>
+</div>
+
+<div class="instagram">
+  <h2>instagram</h2>
+    <div class="close"></div><div class="close"></div><div class="close"></div><div class="close"></div><div class="close"></div><div class="close"></div>
+</div>
+
+<div class="instagram-adapt">
+        <h2>instagram</h2>
+            <div class="come"></div>
+            <div class="come"></div>
+            <div class="come"></div>
+            <div class="come"></div>
+            <div class="come"></div>
+            <div class="come"></div>
+    </div>
+</div>
+</section>
+
+<section class="footer-down">
+  <div class="contact">
+  <div class="footer">
+    <div class="footer-container">
+        <div class="copyright">copyrighting &#169; KARTA 2016</div>
+             <div class="designer">designed BY ///AGILO</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
+<!-- -->

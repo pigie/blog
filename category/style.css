@@ -1,0 +1,1084 @@
+body {
+    margin: 0;
+    font-size: 16px;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+section {
+    width: 100%;
+    padding: 20px;
+}
+
+
+.open {
+    cursor: pointer
+}
+.modal {
+    position: absolute;
+    width: 300px;
+    margin-left: -150px;
+    left: 50%;
+    padding: 20px;
+    z-index: 9999;
+}
+.overflow {
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 118px;
+}
+
+.container {
+    width: auto;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.container-two {
+    display: none;
+}
+
+/*меню*/
+@media screen and (max-width:960px) {
+    .container {
+        display: none;
+    }
+    .container-two {
+        display: block;
+        background: red;
+    }
+}
+
+.container > .content-left {
+    display: inline-block;
+    font-size: 50px;
+}
+
+.container > .content-left > a .logo {
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #000;
+}
+
+.container > .content-right {
+    margin-top: 8px;
+    text-align: right;
+    display: inline-block;
+    float: right;
+}
+
+ .menu {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 15px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 62px;
+}
+.categories {
+    border-bottom: 3px solid;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.menu li a:hover {
+    text-decoration: none;
+    color: #000;
+}
+/*==================== modal subscribe ==========================*/
+
+.button {
+    border: 3px solid;
+    display: inline-block;
+    width: 430px;
+    text-align: center;
+    cursor: pointer;
+    padding: 20px;
+}
+
+span {
+    cursor: pointer;
+    display: inline-block;
+    border:2px solid #000;
+    padding: 13px 16px 12px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+span:hover {
+    cursor: pointer;
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    border:2px solid #000;
+    padding: 13px 16px 12px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s;
+    box-shadow: 0 0 2px 0px black;
+}
+
+.modal {
+    position: absolute;
+    width: 526px;
+    top:-99999px;
+    font-size: 24px;
+    text-align: left;
+    margin-left: -253px;
+    left: 50%;
+    padding: 20px;
+    color: #fff;
+    font-family: sans-serif;
+    z-index: 9999;
+ }
+.overflow {
+    width: 100%;
+    height: 349px;
+    margin-top: 98px;
+    z-index: 9998;
+    background: #000;
+    position: absolute;
+    top: 0;
+ }
+
+/*Выделение input*/
+.modal > input {
+    width: 454px;
+    outline: none;
+    background: transparent;
+    border: 0;
+    color: #fff;
+    border-bottom: 1px solid;
+    margin-bottom: 40px;
+}
+
+.modal h1 {
+    font-size: 24px;
+}
+
+.main-article {
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-article img {
+    width: 100%;
+    height: 892px;
+}
+
+.article {
+    position: relative;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+
+.article > .content {
+    width: 89%;
+    max-width: 750px;
+    background: #0000007d;
+    margin: -335px auto 0;
+}
+
+.article > .content > .date {
+    color: #fff;
+    font-family: sans-serif;
+    padding: 43px 0 0 20px;
+}
+
+.article > .content > .title {
+    width: 100%;
+    font-size: 40px;
+    font-family: sans-serif;
+    padding: 20px 52px 0 46px;
+    color: #fff;
+    font-weight: bold;
+}
+
+@media screen and (max-width:1020px) {
+    .article > .content > .title {
+        font-size: 2.25rem;
+        padding: 19px 47px 20px;
+    }
+}
+
+@media screen and (max-width:355px) {
+    .article > .content > .title {
+        font-size: 1.4em;
+        padding: 19px 23px 20px;
+    }
+}
+
+.article > .content > .txt {
+    width: 100%;
+    background: #fff;
+    margin-top: 32px;
+}
+
+
+.txt > .subtitle {
+    height: 189px;
+    font-size: 28px;
+    font-family: sans-serif;
+    padding: 60px 19px 0 60px;
+}
+
+.txt > .subtitle-adapt {
+    display: none;
+}
+
+.txt > .subtitle > .number {
+    display: inline-block;
+    float: left;
+    margin:3px 25px 0 -12px;
+}
+
+.txt > .subtitle > .number-ad {
+    display: none;
+}
+
+@media screen and (max-width:1000px) {
+    .txt > .subtitle {
+        padding: 60px 19px 0 27px;
+    }
+    .txt > .subtitle > .number {
+        display: none;
+    }
+    .txt > .subtitle > .number-ad {
+        display: block;
+        background: red;
+        margin-left: -11px;
+        float: left;
+        font-size: 21px;
+    }
+}
+.sb-title {
+    font-size: 37px;
+    width: 472px;
+    margin: 0 60px;
+    margin-left: 38px;
+}
+
+.sb-title-adapt {
+    display: none;
+    font-size: 38px;
+}
+
+.title {
+    padding: 0px 0 50px;
+    background: #000;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.title > .inscription {
+    padding-top: 50px;
+}
+
+.mesh {
+    padding-top: 29px;
+    text-align: center;
+    padding-bottom: 47px;
+}
+
+.range1 {
+    text-align: center;
+}
+
+.range1 a {
+    display: inline-block;
+    margin: 0 61px;
+    vertical-align: top;
+}
+
+.range1 > a .block {
+    display: inline-block;
+    width: 348px;
+    background-image: url("https://mobimg.b-cdn.net/pic/v2/gallery/preview/tigry-zhivotnye-24572.jpg");
+    vertical-align: top;
+    padding-top: 95px;
+    text-align: left;
+}
+
+.range1 > a:nth-child(even) {
+    background: green;
+    padding-top: 105px;
+    background-image: url("https://mobimg.b-cdn.net/pic/v2/gallery/preview/tigry-zhivotnye-24572.jpg");
+}
+
+a .block > .category {
+    background: #fff;
+    padding: 10px;
+    display: inline-block;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+}
+
+a .block > .inscription {
+    background: #000;
+    color: #fff;
+    padding: 40px 20px 37px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+a .block > .inscription:hover {
+    background: #00000070;
+}
+
+/*Дата на блоке*/
+.date {
+    padding-bottom: 15px;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+.range1-ad {
+    display: none;
+}
+.range1 > a .block2 {
+    display: inline-block;
+    width: 348px;
+    background-image: url("");
+    vertical-align: top;
+    padding-top: 95px;
+    text-align: left;
+}
+
+a .block2 > .category {
+    background: #fff;
+    padding: 10px;
+    display: inline-block;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+}
+
+a .block2 > .inscription {
+    background: #000;
+    color: #fff;
+    padding: 40px 20px 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+a .block2 > .inscription:hover {
+    background: #00000070;
+}
+
+/*Дата на блоке*/
+.date {
+    padding-bottom: 15px;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+/*3 блок*/
+.range1 > a .block3 {
+    display: inline-block;
+    width: 348px;
+    background-image: url("https://mobimg.b-cdn.net/pic/v2/gallery/preview/tigry-zhivotnye-24572.jpg");
+    vertical-align: top;
+    padding-top: 95px;
+    text-align: left;
+}
+
+a .block3 > .category {
+    background: #fff;
+    padding: 10px;
+    display: inline-block;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+}
+
+a .block3 > .inscription {
+    background: #000;
+    color: #fff;
+    padding: 50px 20px;
+    padding-top: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+a .block3 > .inscription:hover {
+    background: #00000070;
+}
+
+@media screen and (max-width:1500px) {
+.range1 {
+    display: none;
+}
+
+.range1-ad {
+    display: block;
+    text-decoration: none;
+}
+
+ a .block1 {
+    display: inline-block;
+    width: 266px;
+    text-align: left;
+    vertical-align: top;
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-serif;
+    padding-top: 95px;
+    font-weight: bold;
+    background-image: url("https://s1.1zoom.ru/big7/158/France_Motorboat_Paris_354748.jpg");
+    background-size: cover;
+}
+
+a .block1 img {
+    width: 100%;
+}
+
+a .block1> .category {
+    background: #fff;
+    padding: 10px;
+    display: inline-block;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+}
+
+a .block1 > .inscription {
+    background: #000;
+    padding: 26px 0 25px 26px;;
+    text-align: left;
+}
+
+a .block1 > .inscription:hover {
+    background: #00000082;
+}
+
+ a  .block2 {
+        display: inline-block;
+        width: 266px;
+        margin: 0 49px;
+        padding-top: 95px;
+        text-align: left;
+        background-image: url("https://s1.1zoom.ru/big7/158/France_Motorboat_Paris_354748.jpg");
+    }
+
+    a .block2 > .inscription {
+        background: #000;
+        padding: 26px 0 25px 26px;
+        text-align: left;
+    }
+
+    a .block2 > .inscription:hover {
+        background: #00000082;
+}
+
+ a .block3 {
+        display: inline-block;
+        width: 266px;
+        padding-top: 95px;
+        background-image: url("https://s1.1zoom.ru/big7/158/France_Motorboat_Paris_354748.jpg");
+        vertical-align: top;
+        text-align: left;
+}
+
+a .block3 > .inscription {
+        background: #000;
+        padding: 26px 0 25px 26px;;
+        text-align: left;
+}
+
+a .block3 > .inscription:hover {
+        background: #00000082;
+    }
+}
+
+@media screen and (max-width:970px) {
+    .range1 {
+        display: none;
+    }
+
+    .range1-ad {
+        display: block;
+        margin-bottom: 60px;
+    }
+
+    a .block1 {
+        display: block;
+        width: 100%;
+        max-width: 960px;
+        background-image:url("https://s1.1zoom.ru/big7/158/France_Motorboat_Paris_354748.jpg");
+        margin: 0 auto 20px;
+        padding-top: 113px;
+    }
+
+    a .block1 > .inscription {
+        background: #000;
+        padding: 26px 0 25px 26px;;
+        text-align: left;
+        font-size: 28px;
+    }
+
+    a .block1 > .inscription:hover {
+        background: #00000082;
+    }
+
+    a .block2 {
+        display: block;
+        width: auto;
+        max-width: 960px;
+        height: auto;
+        background-image:url("https://s1.1zoom.ru/big7/158/France_Motorboat_Paris_354748.jpg");
+        margin:0 auto 20px;
+        padding-top: 60px;
+        font-size: 38px;
+    }
+
+    a .block2 > .inscription {
+        padding: 26px 0 25px 26px;
+        text-align: left;
+        font-size: 28px;
+    }
+
+    a .block3 {
+        display: block;
+        width: 100%;
+        max-width: 960px;
+        padding-top: 95px;
+        background-image:url("https://s1.1zoom.ru/big7/158/France_Motorboat_Paris_354748.jpg");
+        margin:0 auto 20px;
+    }
+
+    a .block3 > .inscription {
+        font-size: 32px;
+    }
+}
+
+
+a {
+    text-decoration: none;
+}
+/*2*/
+.range2 {
+    text-align: center;
+}
+/**/
+.load-more {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    border: 3px solid #000;
+    padding: 21px 130px;
+}
+
+.load-more:hover {
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+/**/
+
+/*Белый footer*/
+
+/*footer inform "social-network"*/ /*footer - под надписью load more*/
+/*padding для footer-info*/
+.footer-info {
+    margin: 0 auto;
+    background: white;
+    padding-top: 51px;
+}
+
+.footer-info > .container-footer {
+    margin: 0 auto;
+    width: auto;
+    max-width: 1147px;
+}
+
+ .container-footer > .description {
+    max-width: 341px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.container-footer > .description > .title {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    padding-bottom: 31px;
+    background: transparent;
+    color: #000;
+    text-align: left;
+}
+
+ .container-footer > .description > .title-two {
+    display: none;
+    max-width: 341px;
+    margin: 0 auto;
+    vertical-align: top;
+}
+
+.container-footer > .description > .text {
+    font-family: sans-serif;
+    padding-bottom: 31px;
+}
+
+
+.footer-info > .container-footer > .discription-adapt {
+    display: none;
+    width: 100px;
+
+}
+/*=============================f======================================*/
+@media screen and (max-width:1200px){
+     .container-footer > .description {
+        display: none;
+    }
+    .footer-info > .container-footer > .discription-adapt {
+        display: block;
+        vertical-align: top;
+        width: auto;
+        max-width: 261px;
+        margin: 0 auto 0;
+        text-align: left;
+        font-family: sans-serif;
+    }
+
+     .container-footer > .discription-adapt > .btn {
+        width: 10px;
+        height: 10px;
+     }
+
+/*====================================*/
+     .div1 {
+        font-family: sans-serif;
+        text-align:left;
+    }
+
+     .div1 > h2 {
+        font-size: 24px;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        margin: 0 0 30px;
+    }
+
+    .container-div1 >.div1 {
+        display: inline-block;
+        width: 88%;
+        background: black;
+        max-width: 120px;
+        height: 60;
+    }
+}
+
+
+@media screen (max-width:625px){
+    .footer-info > .container-footer > .description {
+        display: none;
+    }
+    .footer-info > .container-footer > .discription-adapt {
+        display: block;
+        margin: 0 auto;
+    }
+
+     .discription-adapt > .div1 {
+        font-family: sans-serif;
+        text-align: center;
+    }
+
+     .div1 > h2 {
+        font-family: sans-serif;
+        text-transform: uppercase;
+    }
+}
+
+.container-btn {
+    max-width: 341px;
+    margin: 0 auto;
+    padding-top: 34px;
+}
+
+.container-btn > .btn {
+    display: inline-block;
+    height: 60px;
+    padding-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #7d7d7d;
+}
+
+.container-btn > .btn:hover {
+    background: #7d7d7d;
+    cursor: pointer;
+    color: #fff;
+}
+
+.container-btn > .btn:nth-child(1n) {
+    margin: 0 10px 20px 0;
+    width: 150px;
+    border: 3px solid #7d7d7d;
+}
+
+.container-btn > .btn:nth-child(-n+2) {
+    margin-bottom: 20px;
+    width: 150px;
+    height: 60px;
+}
+
+@media screen and (max-width:1200px){
+    .discription-adapt > .div1 > .div1-text {
+        display: none;
+    }
+    .discription-adapt >.container-btn-adapt {
+        width: 100%;
+        max-width: 960px;
+    }
+    .discription-adapt >.container-btn-adapt:nth-child(2n+1) {
+        margin-bottom: 20px;
+    }
+     .container-in {
+        margin-top: 30px;
+    }
+     .container-in > .btn {
+         display: inline-block;
+         width: 88%;
+         max-width: 120px;
+         height: 60px;
+         color: gray;
+         border: 3px solid gray;
+         padding: 17px 10px;
+         text-align: center;
+         font-weight: bold;
+         text-transform: uppercase;
+    }
+
+    .container-in > .btn:hover {
+        background: gray;
+        color: #fff;
+        font-weight: bold;
+    }
+     .container-in > .btn:nth-child(-n+2) {
+        margin-bottom: 10px;
+    }
+    .container-in > .btn:nth-child(odd) {
+        margin-right: 10px;
+    }
+}
+
+
+/*latest-post*/
+
+.latest-post {
+    width:100%;
+    text-align: left;
+    display: inline-block;
+    max-width: 452px;
+    margin: 0 50px 0 50px;
+    vertical-align: top;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.latest-post:nth-child(-n+2) {
+    margin-bottom: 41px;
+}
+
+.latest-post-try {
+    display: none;
+    width: auto;
+    text-align: center;
+    max-width: 459px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+@media screen and (max-width:1200px) {
+    .latest-post {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .latest-post-try {
+        display:block;
+        width: auto;
+        max-width: 261px;
+    }
+
+    .latest-post-try h2 {
+        text-align: left;
+    }
+/*черные квадраты*/
+    a .post-try {
+        background-image:url("https://www.1zoom.ru/big2/919/325807-svetik.jpg");
+        background-size: cover;
+        margin: 3px auto;
+        display: inline-block;
+    }
+
+    .inscriptior {
+        color: #fff;
+        margin-top: 72px;
+        background: #000;
+        padding: 21px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .inscriptior:hover {
+        background: #0000006e;
+    }
+}
+
+
+.latest-post > .title {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    padding-bottom: 0;
+    background: transparent;
+    color: #000;
+    text-align: left;
+}
+
+
+.latest-post > a .post1 {
+    display: inline-block;
+    width: 200px;
+    background-image: url("https://s1.1zoom.ru/big7/158/France_Motorboat_Paris_354748.jpg");
+    margin: 42px 21px 0 0;
+    vertical-align: top;
+}
+
+
+.post1 > .inscription {
+    margin-top: 80px;
+    background: #000;
+    color: #fff;
+    padding: 20px 19px;
+}
+
+.post1 > .inscription:hover {
+    background: #0006;
+}
+
+.latest-post > .post1:nth-child(odd) {
+    margin-right: 0;
+}
+
+.latest-post > .container-post2 {
+    display: none;
+    width: auto;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.latest-post > .post2 {
+    display: none;
+    width: 400px;
+    height: 200px;
+    background: blue;
+}
+
+@media screen and (max-width:1200px) {
+    .latest-post > .post1 {
+        display: none;
+    }
+
+    .latest-post > .container-post2 {
+
+    }
+
+    .latest-post > .container-post2 > .post2 {
+        display: block;
+        width: 100%;
+        background: green;
+        max-width: 700px;
+        height: 154px;
+        margin: 0 auto 20px;
+    }
+}
+
+
+.instagram {
+    vertical-align: top;
+    width: auto;
+    max-width: 230px;
+    display: inline-block;
+}
+
+.instagram h2 {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0px 0 42px;
+    text-align: left;
+}
+.instagram > .close {
+    display: inline-block;
+    width: 115px;
+    height: 96px;
+    background-image: url("https://s1.1zoom.ru/big7/158/France_Motorboat_Paris_354748.jpg");
+    margin-bottom: -4px;
+}
+
+
+.instagram-adapt {
+    display: none;
+}
+
+@media screen and (max-width:1200px) {
+.instagram {
+    display: none;
+}
+
+.instagram-adapt {
+    max-width: 264px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-family: sans-serif;
+  }
+
+  .instagram-adapt h2 {
+      text-transform: uppercase;
+      text-align: left;
+  }
+   .instagram-adapt > .come  {
+       height: 200px;
+       background-image: url("https://www.1zoom.ru/big2/919/325807-svetik.jpg");
+       margin: 0 auto;
+       background-size: cover;
+       max-width: 338px;
+     }
+}
+
+/*самый нижний черный footer*/
+/*footer*/
+.contact {
+    background: red;
+    padding: 0;
+}
+.footer {
+    width: 100%;
+    height: 62px;
+    padding: 20px 20px 0;
+    background:#000;
+}
+
+/*footer*/
+.footer > .footer-container {
+    width: auto;
+    max-width: 1152px;
+    margin: 0 auto;
+    padding: 3px 0 2px;
+}
+
+/**/
+/*самый нижний черный footer*/
+/*footer*/
+.footer-down {
+    width: 100%;
+    padding: 0;
+}
+
+.footer {
+    width: auto;
+    height: 58px;
+    padding: 0 20px;
+    border-bottom: 1px solid #0b51c4;
+    border-top: 1px solid #0b51c4;
+}
+
+/*footer*/
+.footer > .footer-container {
+    width: auto;
+    max-width: 1152px;
+    margin: 0 auto;
+}
+
+
+/*footer*/
+@media screen and (max-width:403px){
+    .footer > .footer-container  {
+        display: none;
+    }
+
+    .footer > .footer-container-ad {
+        display: block;
+        font-size: 15px;
+        color: #fff;
+        font-family: sans-serif;
+        opacity: 0.3;
+        padding: 20px 20px 0;
+        text-transform: uppercase;
+        float: right;
+    }
+}
+
+
+/*footer*/
+.footer > .footer-container > .copyright {
+    color: #8e8e8e;
+    font-family: sans-serif;
+    float: left;
+    padding: 23px 0 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+/*footer*/
+.footer > .footer-container > .designer {
+    color: #8e8e8e;
+    font-family: sans-serif;
+    padding:23px 0 10px;
+    text-transform: uppercase;
+    float: right;
+    font-size: 15px;
+}
+/*footer*/
+@media screen and (max-width:503px) {
+    .footer > .footer-container > .copyright {
+        font-size: 12px;
+    }
+     .footer > .footer-container > .designer {
+         font-size: 12px;
+     }
+}
+
+
+/**/
